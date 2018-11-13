@@ -6,48 +6,50 @@ core: 8.6
 distribution:
   name: 'Alkaline'
 
+install:name: Alkaline
+type: profile
+description: "A general-purpose Drupal distribution."
+core: 8.6
+
+distribution:
+  name: 'Alkaline'
+
 install:
-  - automated_cron
-  - big_pipe
+  - node
+  - history
   - block
-  - block_content
   - breakpoint
   - ckeditor
   - color
-  - comment
   - config
+  - comment
+  #- contextual
   - contact
-  - datetime
-  - dblog
-  - dynamic_page_cache
-  - editor
-  - field
-  - field_ui
-  - file
-  - filter
-  - help
-  - history
-  - image
-  - link
-  - media
   - menu_link_content
+  - datetime
+  - block_content
+  #- quickedit
+  - editor
+  - help
+  - image
   - menu_ui
-  - node
   - options
-  - page_cache
   - path
-  - rdf
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
   - search
   - shortcut
-  - system
-  - taxonomy
-  - text
   - toolbar
-  - tour
-  - update
-  - user
+  - field_ui
+  - file
+  - rdf
   - views
   - views_ui
+  - tour
+  - automated_cron
   - address
   - admin_toolbar
   - ctools
@@ -63,6 +65,11 @@ install:
   - svg_image
   - token
   - token_filter
+
+themes:
+  - bartik
+  - seven
+
 
 themes:
   - bartik
