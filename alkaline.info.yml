@@ -60,13 +60,9 @@ install:
   - paragraphs
   - pathauto
   - r4032login
-  - rules
-  - social_api
-  - social_post
   - svg_image
   - token
   - token_filter
-  - typed_data
 
 themes:
   - bartik
