@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: alkaline_hero_medium
+label: 'Hero Medium (1080x900)'
+effects:
+  -
+    uuid: ''
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1080
+      height: 900
+      anchor: center-center

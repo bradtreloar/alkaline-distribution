@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.alkaline_contact
+    - field.field.block_content.alkaline_contact.field_address
+    - field.field.block_content.alkaline_contact.field_map
+    - field.field.block_content.alkaline_contact.field_phone
+  module:
+    - address
+    - google_map_field
+    - text
+id: block_content.alkaline_contact.default
+targetEntityType: block_content
+bundle: alkaline_contact
+mode: default
+content:
+  field_address:
+    type: address_default
+    weight: 2
+    region: content
+    settings:
+      default_country: null
+    third_party_settings: {  }
+  field_map:
+    type: google_map_field_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_phone:
+    type: text_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

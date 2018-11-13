@@ -1,0 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feature
+    - paragraphs.paragraphs_type.feature
+    - paragraphs.paragraphs_type.feature_set
+  module:
+    - entity_reference_revisions
+id: paragraph.feature_set.field_feature
+field_name: field_feature
+entity_type: paragraph
+bundle: feature_set
+label: feature
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      feature: feature
+    target_bundles_drag_drop:
+      feature:
+        enabled: true
+        weight: 8
+      banner:
+        weight: 9
+        enabled: false
+      collage:
+        weight: 10
+        enabled: false
+      feature_set:
+        weight: 11
+        enabled: false
+      image:
+        weight: 12
+        enabled: false
+      image_and_text:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

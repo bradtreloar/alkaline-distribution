@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:5fd085e2-10c3-43fb-8a59-7d31eebefe71'
+id: text
+label: Text
+icon_uuid: 5fd085e2-10c3-43fb-8a59-7d31eebefe71
+description: ''
+behavior_plugins: {  }

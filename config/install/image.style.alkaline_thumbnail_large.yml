@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: alkaline_thumbnail_large
+label: 'Large Thumbnail (240x240)'
+effects:
+  -
+    uuid: ''
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 240
+      height: 240
+      anchor: center-center

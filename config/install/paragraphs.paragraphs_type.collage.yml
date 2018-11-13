@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:0d4cc455-bf6a-4f9a-9362-20d05306e4bb'
+id: collage
+label: Collage
+icon_uuid: 0d4cc455-bf6a-4f9a-9362-20d05306e4bb
+description: ''
+behavior_plugins: {  }

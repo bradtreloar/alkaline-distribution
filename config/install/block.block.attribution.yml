@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8351753f-eaf9-474d-a815-c0ebf39a0cf9'
+  module:
+    - block_content
+  theme:
+    - alkaline
+id: attribution
+theme: alkaline
+region: boilerplate
+weight: 0
+provider: null
+plugin: 'block_content:8351753f-eaf9-474d-a815-c0ebf39a0cf9'
+settings:
+  id: 'block_content:8351753f-eaf9-474d-a815-c0ebf39a0cf9'
+  label: Attribution
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

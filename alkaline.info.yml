@@ -1,0 +1,73 @@
+name: Alkaline
+type: profile
+description: "A general-purpose Drupal distribution."
+core: 8.6
+
+distribution:
+  name: 'Alkaline'
+
+install:
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - config
+  - contact
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - field
+  - field_ui
+  - file
+  - filter
+  - help
+  - history
+  - image
+  - link
+  - media
+  - menu_link_content
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - rdf
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - text
+  - toolbar
+  - tour
+  - update
+  - user
+  - views
+  - views_ui
+  - address
+  - admin_toolbar
+  - ctools
+  - devel
+  - entity_reference_revisions
+  - google_map_field
+  - mailchimp
+  - menu_admin_per_menu
+  - metatag
+  - paragraphs
+  - pathauto
+  - r4032login
+  - rules
+  - social_api
+  - social_post
+  - svg_image
+  - token
+  - token_filter
+  - typed_data
+
+themes:
+  - bartik
+  - seven
