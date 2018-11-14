@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall hooks for the Alkaline install profile.
+ * Install, update and uninstall hooks for the alkaline_distribution install profile.
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * @see system_install()
  */
-function alkaline_install() {
+function alkaline_distribution_install() {
   // First, do everything that is done in the standard profile.
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
