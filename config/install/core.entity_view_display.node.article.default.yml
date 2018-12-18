@@ -11,7 +11,7 @@ dependencies:
     - node.type.article
   module:
     - comment
-    - image
+    - svg_image
     - text
     - user
 id: node.article.default

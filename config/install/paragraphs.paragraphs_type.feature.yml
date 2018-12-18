@@ -1,8 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  content:
-    - 'file:file:56b7fe34-bbc8-44c7-9033-324075f4498d'
+dependencies: {  }
 id: feature
 label: Feature
 icon_uuid: 56b7fe34-bbc8-44c7-9033-324075f4498d

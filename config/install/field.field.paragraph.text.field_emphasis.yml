@@ -1,0 +1,23 @@
+uuid: cf4d2fc6-8d0b-4457-9985-76b56d71bf4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_emphasis
+    - paragraphs.paragraphs_type.text
+id: paragraph.text.field_emphasis
+field_name: field_emphasis
+entity_type: paragraph
+bundle: text
+label: 'Emphasise this section'
+description: 'Add emphasis to this section (makes the text larger and adds background decoration).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

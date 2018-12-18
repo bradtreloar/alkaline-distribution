@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_text
+    - field.field.paragraph.text.field_emphasis
     - paragraphs.paragraphs_type.text
   module:
     - text
@@ -18,4 +19,5 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-hidden: {  }
+hidden:
+  field_emphasis: true

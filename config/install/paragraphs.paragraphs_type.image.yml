@@ -1,8 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  content:
-    - 'file:file:a6cccadd-00db-42ee-88ee-be522dd49e7d'
+dependencies: {  }
 id: image
 label: Image
 icon_uuid: a6cccadd-00db-42ee-88ee-be522dd49e7d
