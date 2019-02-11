@@ -1,0 +1,137 @@
+base_field: nid
+base_table: node_field_data
+core: 8.x
+dependencies:
+  config: [core.entity_view_mode.node.lead]
+  module: [node, user]
+description: ''
+display:
+  block_1:
+    cache_metadata:
+      contexts: ['languages:language_content', 'languages:language_interface', url,
+        'user.node_grants:view', user.permissions]
+      max-age: -1
+      tags: {}
+    display_options:
+      block_description: Content Lead Section
+      block_hide_empty: true
+      display_extenders: {}
+    display_plugin: block
+    display_title: Block
+    id: block_1
+    position: 1
+  default:
+    cache_metadata:
+      contexts: ['languages:language_content', 'languages:language_interface', url,
+        'user.node_grants:view', user.permissions]
+      max-age: -1
+      tags: {}
+    display_options:
+      access:
+        options: {perm: access content}
+        type: perm
+      arguments:
+        nid:
+          admin_label: ''
+          break_phrase: false
+          default_action: default
+          default_argument_options: {}
+          default_argument_skip_url: false
+          default_argument_type: node
+          entity_field: nid
+          entity_type: node
+          exception: {title: All, title_enable: false, value: all}
+          field: nid
+          group_type: group
+          id: nid
+          not: false
+          plugin_id: node_nid
+          relationship: none
+          specify_validation: false
+          summary: {format: default_summary, number_of_records: 0, sort_order: asc}
+          summary_options: {base_path: '', count: true, items_per_page: 25, override: false}
+          table: node_field_data
+          title: ''
+          title_enable: false
+          validate: {fail: not found, type: none}
+          validate_options: {}
+      cache:
+        options: {}
+        type: tag
+      display_extenders: {}
+      empty: {}
+      exposed_form:
+        options: {expose_sort_order: true, exposed_sorts_label: Sort by, reset_button: false,
+          reset_button_label: Reset, sort_asc_label: Asc, sort_desc_label: Desc, submit_button: Apply}
+        type: basic
+      fields:
+        title:
+          admin_label: ''
+          alter: {absolute: false, alter_text: false, ellipsis: false, html: false,
+            make_link: false, strip_tags: false, trim: false, word_boundary: false}
+          click_sort_column: value
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ''
+          element_default_classes: true
+          element_label_class: ''
+          element_label_colon: true
+          element_label_type: ''
+          element_type: ''
+          element_wrapper_class: ''
+          element_wrapper_type: ''
+          empty: ''
+          empty_zero: false
+          entity_field: title
+          entity_type: node
+          exclude: false
+          field: title
+          field_api_classes: false
+          group_column: value
+          group_columns: {}
+          group_rows: true
+          group_type: group
+          hide_alter_empty: true
+          hide_empty: false
+          id: title
+          label: ''
+          multi_type: separator
+          plugin_id: field
+          relationship: none
+          separator: ', '
+          settings: {link_to_entity: true}
+          table: node_field_data
+          type: string
+      filters: {}
+      footer: {}
+      header: {}
+      pager:
+        options: {items_per_page: 1, offset: 0}
+        type: some
+      query:
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          query_comment: ''
+          query_tags: {}
+          replica: false
+        type: views_query
+      relationships: {}
+      row:
+        options: {relationship: none, view_mode: lead}
+        type: entity:node
+      sorts: {}
+      style: {type: default}
+      title: ''
+    display_plugin: default
+    display_title: Master
+    id: default
+    position: 0
+id: content_lead
+label: Content Lead
+langcode: en
+module: views
+status: true
+tag: ''

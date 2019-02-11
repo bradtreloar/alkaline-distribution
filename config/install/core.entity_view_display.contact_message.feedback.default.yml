@@ -1,20 +1,24 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - contact.form.feedback
-    - field.field.contact_message.feedback.field_your_phone_number
-id: contact_message.feedback.default
-targetEntityType: contact_message
 bundle: feedback
-mode: default
 content:
-  message:
-    type: basic_string
-    weight: 0
+  field_phone:
     label: above
     region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden:
-  field_your_phone_number: true
+    settings: {link_to_entity: false}
+    third_party_settings: {}
+    type: string
+    weight: 1
+  message:
+    label: above
+    region: content
+    settings: {link_to_entity: false}
+    third_party_settings: {}
+    type: string
+    weight: 0
+dependencies:
+  config: [contact.form.feedback, field.field.contact_message.feedback.field_phone]
+hidden: {}
+id: contact_message.feedback.default
+langcode: en
+mode: default
+status: true
+targetEntityType: contact_message

@@ -1,0 +1,20 @@
+dependencies:
+  content: ['block_content:contact:c6f1a7e2-65d3-4f70-91df-f5fb4c102a8b']
+  module: [block_content, system]
+  theme: [metcalf]
+id: contactdetails
+langcode: en
+plugin: block_content:c6f1a7e2-65d3-4f70-91df-f5fb4c102a8b
+provider: null
+region: content
+settings: {id: 'block_content:c6f1a7e2-65d3-4f70-91df-f5fb4c102a8b', info: '', label: Contact
+    Details, label_display: visible, provider: block_content, status: true, view_mode: full}
+status: true
+theme: metcalf
+visibility:
+  request_path:
+    context_mapping: {}
+    id: request_path
+    negate: false
+    pages: /contact
+weight: -8

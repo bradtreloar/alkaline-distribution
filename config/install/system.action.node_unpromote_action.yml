@@ -1,10 +1,9 @@
-langcode: en
-status: true
+configuration: {}
 dependencies:
-  module:
-    - node
+  module: [node]
 id: node_unpromote_action
-label: 'Remove content from front page'
-type: node
+label: Remove content from front page
+langcode: en
 plugin: node_unpromote_action
-configuration: {  }
+status: true
+type: node

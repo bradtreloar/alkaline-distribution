@@ -1,0 +1,15 @@
+dependencies:
+  content: ['block_content:basic:4c0ba3ed-4396-4362-b686-7aaf8b01bfdd']
+  module: [block_content]
+  theme: [metcalf]
+id: treloardigital
+langcode: en
+plugin: block_content:4c0ba3ed-4396-4362-b686-7aaf8b01bfdd
+provider: null
+region: boilerplate
+settings: {id: 'block_content:4c0ba3ed-4396-4362-b686-7aaf8b01bfdd', info: '', label: Treloar
+    Digital, label_display: '0', provider: block_content, status: true, view_mode: full}
+status: true
+theme: metcalf
+visibility: {}
+weight: 0

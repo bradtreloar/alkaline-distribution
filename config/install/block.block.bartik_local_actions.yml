@@ -1,17 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  theme:
-    - bartik
+  theme: [bartik]
 id: bartik_local_actions
-theme: bartik
-region: content
-weight: -20
-provider: null
+langcode: en
 plugin: local_actions_block
-settings:
-  id: local_actions_block
-  label: 'Primary admin actions'
-  provider: core
-  label_display: '0'
-visibility: {  }
+provider: null
+region: content
+settings: {id: local_actions_block, label: Primary admin actions, label_display: '0',
+  provider: core}
+status: true
+theme: bartik
+visibility: {}
+weight: -20

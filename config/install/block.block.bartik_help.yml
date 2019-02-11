@@ -1,19 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  module:
-    - help
-  theme:
-    - bartik
+  module: [help]
+  theme: [bartik]
 id: bartik_help
-theme: bartik
-region: content
-weight: -30
-provider: null
+langcode: en
 plugin: help_block
-settings:
-  id: help_block
-  label: Help
-  provider: help
-  label_display: '0'
-visibility: {  }
+provider: null
+region: content
+settings: {id: help_block, label: Help, label_display: '0', provider: help}
+status: true
+theme: bartik
+visibility: {}
+weight: -30

@@ -1,27 +1,26 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - field.field.paragraph.image.field_image
-    - paragraphs.paragraphs_type.image
-  module:
-    - svg_image
-id: paragraph.image.default
-targetEntityType: paragraph
 bundle: image
-mode: default
 content:
-  field_image:
-    weight: 0
+  field_caption:
     label: hidden
-    settings:
-      svg_attributes:
-        width: ''
-        height: ''
-      svg_render_as_image: true
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
     region: content
-hidden: {  }
+    settings: {link_to_entity: false}
+    third_party_settings: {}
+    type: string
+    weight: 1
+  field_image:
+    label: hidden
+    region: content
+    settings: {image_link: '', image_style: ''}
+    third_party_settings: {}
+    type: image
+    weight: 0
+dependencies:
+  config: [field.field.paragraph.image.field_caption, field.field.paragraph.image.field_image,
+    paragraphs.paragraphs_type.image]
+  module: [image]
+hidden: {}
+id: paragraph.image.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

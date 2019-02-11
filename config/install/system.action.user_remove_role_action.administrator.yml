@@ -1,13 +1,10 @@
-langcode: en
-status: true
+configuration: {rid: administrator}
 dependencies:
-  config:
-    - user.role.administrator
-  module:
-    - user
+  config: [user.role.administrator]
+  module: [user]
 id: user_remove_role_action.administrator
-label: 'Remove the Administrator role from the selected user(s)'
-type: user
+label: Remove the Administrator role from the selected user(s)
+langcode: en
 plugin: user_remove_role_action
-configuration:
-  rid: administrator
+status: true
+type: user

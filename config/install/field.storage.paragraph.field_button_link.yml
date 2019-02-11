@@ -1,0 +1,16 @@
+cardinality: -1
+custom_storage: false
+dependencies:
+  module: [link, paragraphs]
+entity_type: paragraph
+field_name: field_button_link
+id: paragraph.field_button_link
+indexes: {}
+langcode: en
+locked: false
+module: link
+persist_with_no_fields: false
+settings: {}
+status: true
+translatable: true
+type: link

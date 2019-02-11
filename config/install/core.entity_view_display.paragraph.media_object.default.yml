@@ -1,0 +1,26 @@
+bundle: media_object
+content:
+  field_image:
+    label: hidden
+    region: content
+    settings: {image_link: '', image_style: ''}
+    third_party_settings: {}
+    type: image
+    weight: 0
+  field_text:
+    label: hidden
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: text_default
+    weight: 1
+dependencies:
+  config: [field.field.paragraph.media_object.field_image, field.field.paragraph.media_object.field_text,
+    paragraphs.paragraphs_type.media_object]
+  module: [image, text]
+hidden: {}
+id: paragraph.media_object.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

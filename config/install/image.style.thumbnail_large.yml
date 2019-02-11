@@ -1,0 +1,10 @@
+dependencies: {}
+effects:
+- data: {anchor: center-center, height: 240, width: 240}
+  id: image_scale_and_crop
+  uuid: ''
+  weight: 2
+label: Large Thumbnail (240x240)
+langcode: en
+name: thumbnail_large
+status: true

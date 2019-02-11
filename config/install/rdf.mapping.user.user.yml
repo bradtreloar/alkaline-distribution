@@ -1,14 +1,11 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - user
-id: user.user
-targetEntityType: user
 bundle: user
-types:
-  - 'schema:Person'
+dependencies:
+  module: [user]
 fieldMappings:
   name:
-    properties:
-      - 'schema:name'
+    properties: ['schema:name']
+id: user.user
+langcode: en
+status: true
+targetEntityType: user
+types: ['schema:Person']

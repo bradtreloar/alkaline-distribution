@@ -1,0 +1,8 @@
+cache: true
+dependencies:
+  module: [node]
+id: node.list_item
+label: List Item
+langcode: en
+status: true
+targetEntityType: node

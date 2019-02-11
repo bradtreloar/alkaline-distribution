@@ -1,17 +1,12 @@
-langcode: en
-status: true
 dependencies:
-  theme:
-    - seven
+  theme: [seven]
 id: seven_page_title
-theme: seven
-region: header
-weight: -30
-provider: null
+langcode: en
 plugin: page_title_block
-settings:
-  id: page_title_block
-  label: 'Page title'
-  provider: core
-  label_display: '0'
-visibility: {  }
+provider: null
+region: header
+settings: {id: page_title_block, label: Page title, label_display: '0', provider: core}
+status: true
+theme: seven
+visibility: {}
+weight: -30

@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: feature_set
-label: 'Feature Set'
-icon_uuid: 011803bd-448f-4985-a9b2-569cd7f869a5
-description: ''
-behavior_plugins: {  }

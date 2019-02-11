@@ -1,0 +1,15 @@
+dependencies:
+  config: [system.menu.contact]
+  module: [system]
+  theme: [metcalf]
+id: contact
+langcode: en
+plugin: system_menu_block:contact
+provider: null
+region: header_right
+settings: {depth: 0, id: 'system_menu_block:contact', label: Contact, label_display: '0',
+  level: 1, provider: system}
+status: true
+theme: metcalf
+visibility: {}
+weight: -10

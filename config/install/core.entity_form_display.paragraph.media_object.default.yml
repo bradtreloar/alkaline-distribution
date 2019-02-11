@@ -1,0 +1,24 @@
+bundle: media_object
+content:
+  field_image:
+    region: content
+    settings: {preview_image_style: thumbnail, progress_indicator: throbber}
+    third_party_settings: {}
+    type: image_image
+    weight: 0
+  field_text:
+    region: content
+    settings: {placeholder: '', rows: 3}
+    third_party_settings: {}
+    type: text_textarea
+    weight: 1
+dependencies:
+  config: [field.field.paragraph.media_object.field_image, field.field.paragraph.media_object.field_text,
+    image.style.thumbnail, paragraphs.paragraphs_type.media_object]
+  module: [image, text]
+hidden: {created: true, status: true, uid: true}
+id: paragraph.media_object.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

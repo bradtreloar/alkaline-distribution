@@ -1,0 +1,8 @@
+cache: true
+dependencies:
+  module: [node]
+id: node.index_item
+label: Index Item
+langcode: en
+status: true
+targetEntityType: node

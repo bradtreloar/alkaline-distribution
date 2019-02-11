@@ -1,0 +1,17 @@
+bundle: media_object
+default_value: {}
+default_value_callback: ''
+dependencies:
+  config: [field.storage.paragraph.field_text, paragraphs.paragraphs_type.media_object]
+  module: [text]
+description: ''
+entity_type: paragraph
+field_name: field_text
+field_type: text_long
+id: paragraph.media_object.field_text
+label: Text
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

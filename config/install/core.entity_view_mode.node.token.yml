@@ -1,9 +1,8 @@
-langcode: en
-status: true
+cache: true
 dependencies:
-  module:
-    - node
+  module: [node]
 id: node.token
 label: Token
+langcode: en
+status: true
 targetEntityType: node
-cache: true

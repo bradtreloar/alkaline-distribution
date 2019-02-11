@@ -1,17 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  theme:
-    - seven
+  theme: [seven]
 id: seven_local_actions
-theme: seven
-region: content
-weight: -10
-provider: null
+langcode: en
 plugin: local_actions_block
-settings:
-  id: local_actions_block
-  label: 'Primary admin actions'
-  provider: core
-  label_display: '0'
-visibility: {  }
+provider: null
+region: content
+settings: {id: local_actions_block, label: Primary admin actions, label_display: '0',
+  provider: core}
+status: true
+theme: seven
+visibility: {}
+weight: -10

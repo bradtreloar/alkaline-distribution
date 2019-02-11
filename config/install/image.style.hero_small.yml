@@ -1,0 +1,10 @@
+dependencies: {}
+effects:
+- data: {anchor: center-center, height: 600, width: 720}
+  id: image_scale_and_crop
+  uuid: ''
+  weight: 2
+label: Hero Small (720x600)
+langcode: en
+name: hero_small
+status: true

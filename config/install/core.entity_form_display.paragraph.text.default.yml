@@ -1,32 +1,17 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - field.field.paragraph.text.field_text
-    - paragraphs.paragraphs_type.text
-  module:
-    - text
-id: paragraph.text.default
-targetEntityType: paragraph
 bundle: text
-mode: default
 content:
-  field_emphasis:
-    weight: 1
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   field_text:
-    weight: 0
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
     region: content
-hidden:
-  created: true
-  status: true
-  uid: true
+    settings: {placeholder: '', rows: 5}
+    third_party_settings: {}
+    type: text_textarea
+    weight: 0
+dependencies:
+  config: [field.field.paragraph.text.field_text, paragraphs.paragraphs_type.text]
+  module: [text]
+hidden: {created: true, status: true, uid: true}
+id: paragraph.text.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

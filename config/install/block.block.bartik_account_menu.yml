@@ -1,23 +1,15 @@
-langcode: en
-status: true
 dependencies:
-  config:
-    - system.menu.account
-  module:
-    - system
-  theme:
-    - bartik
+  config: [system.menu.account]
+  module: [system]
+  theme: [bartik]
 id: bartik_account_menu
-theme: bartik
-region: secondary_menu
-weight: 0
+langcode: en
+plugin: system_menu_block:account
 provider: null
-plugin: 'system_menu_block:account'
-settings:
-  id: 'system_menu_block:account'
-  label: 'User account menu'
-  provider: system
-  label_display: '0'
-  level: 1
-  depth: 1
-visibility: {  }
+region: secondary_menu
+settings: {depth: 1, id: 'system_menu_block:account', label: User account menu, label_display: '0',
+  level: 1, provider: system}
+status: true
+theme: bartik
+visibility: {}
+weight: 0

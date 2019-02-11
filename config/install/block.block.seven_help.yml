@@ -1,19 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  module:
-    - help
-  theme:
-    - seven
+  module: [help]
+  theme: [seven]
 id: seven_help
-theme: seven
-region: help
-weight: 0
-provider: null
+langcode: en
 plugin: help_block
-settings:
-  id: help_block
-  label: Help
-  provider: help
-  label_display: '0'
-visibility: {  }
+provider: null
+region: help
+settings: {id: help_block, label: Help, label_display: '0', provider: help}
+status: true
+theme: seven
+visibility: {}
+weight: 0

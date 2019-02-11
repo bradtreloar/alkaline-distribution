@@ -1,11 +1,8 @@
-name: Alkaline
-mail: brad@treloardigital.com.au
-slogan: 'Drupal Distribution'
-page:
-  403: ''
-  404: ''
-  front: /node/1
 admin_compact_mode: false
-weight_select_max: 100
-langcode: en
 default_langcode: en
+langcode: en
+mail: noreply@metcalfgroupsa.com.au
+name: Metcalf Group (SA)
+page: {403: '', 404: '', front: /node/1}
+slogan: We build new homes, renovations and commercial projects.
+weight_select_max: 100

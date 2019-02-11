@@ -1,7 +1,7 @@
-langcode: en
-status: true
-dependencies: {  }
+dependencies: {}
+description: Displays location details
 id: contact
 label: Contact
+langcode: en
 revision: 0
-description: 'A contact block contains contact and location details'
+status: true

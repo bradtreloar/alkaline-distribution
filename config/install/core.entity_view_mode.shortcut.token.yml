@@ -1,9 +1,8 @@
-langcode: en
-status: true
+cache: true
 dependencies:
-  module:
-    - shortcut
+  module: [shortcut]
 id: shortcut.token
 label: Token
+langcode: en
+status: true
 targetEntityType: shortcut
-cache: true

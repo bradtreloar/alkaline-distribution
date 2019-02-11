@@ -1,0 +1,18 @@
+bundle: page
+content:
+  field_body:
+    label: hidden
+    region: content
+    settings: {link: '', view_mode: default}
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    weight: 0
+dependencies:
+  config: [core.entity_view_mode.node.lead, field.field.node.page.field_body, node.type.page]
+  module: [entity_reference_revisions, user]
+hidden: {links: true}
+id: node.page.lead
+langcode: en
+mode: lead
+status: false
+targetEntityType: node

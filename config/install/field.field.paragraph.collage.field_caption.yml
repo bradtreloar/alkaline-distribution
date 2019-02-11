@@ -1,0 +1,16 @@
+bundle: collage
+default_value: {}
+default_value_callback: ''
+dependencies:
+  config: [field.storage.paragraph.field_caption, paragraphs.paragraphs_type.collage]
+description: ''
+entity_type: paragraph
+field_name: field_caption
+field_type: string
+id: paragraph.collage.field_caption
+label: Title
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: true

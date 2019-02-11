@@ -1,0 +1,30 @@
+bundle: portfolio_project
+default_value: {}
+default_value_callback: ''
+dependencies:
+  config: [field.storage.node.field_body, node.type.portfolio_project, paragraphs.paragraphs_type.image,
+    paragraphs.paragraphs_type.text]
+  module: [entity_reference_revisions]
+description: ''
+entity_type: node
+field_name: field_body
+field_type: entity_reference_revisions
+id: node.portfolio_project.field_body
+label: Body
+langcode: en
+required: false
+settings:
+  handler: default:paragraph
+  handler_settings:
+    negate: 0
+    target_bundles: {image: image, text: text}
+    target_bundles_drag_drop:
+      banner: {enabled: false, weight: 9}
+      card: {enabled: false, weight: 8}
+      cards: {enabled: false, weight: 10}
+      collage: {enabled: false, weight: 4}
+      image: {enabled: true, weight: 5}
+      media_object: {enabled: false, weight: 13}
+      text: {enabled: true, weight: 6}
+status: true
+translatable: true

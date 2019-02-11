@@ -1,5 +1,0 @@
-api_key: ''
-cron: false
-batch_limit: 100
-api_classname: Mailchimp\Mailchimp
-test_mode: false

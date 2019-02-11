@@ -1,0 +1,16 @@
+cardinality: 1
+custom_storage: false
+dependencies:
+  module: [node, text]
+entity_type: node
+field_name: field_lead
+id: node.field_lead
+indexes: {}
+langcode: en
+locked: false
+module: text
+persist_with_no_fields: false
+settings: {}
+status: true
+translatable: true
+type: text_long

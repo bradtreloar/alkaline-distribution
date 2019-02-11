@@ -1,0 +1,8 @@
+cache: true
+dependencies:
+  module: [node]
+id: node.lead
+label: Lead
+langcode: en
+status: true
+targetEntityType: node

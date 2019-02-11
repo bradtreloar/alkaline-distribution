@@ -1,10 +1,9 @@
-langcode: en
-status: true
+configuration: {}
 dependencies:
-  module:
-    - user
+  module: [user]
 id: user_unblock_user_action
-label: 'Unblock the selected user(s)'
-type: user
+label: Unblock the selected user(s)
+langcode: en
 plugin: user_unblock_user_action
-configuration: {  }
+status: true
+type: user

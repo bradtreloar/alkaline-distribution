@@ -1,0 +1,26 @@
+bundle: callout
+content:
+  body:
+    label: hidden
+    region: content
+    settings: {}
+    third_party_settings: {}
+    type: text_default
+    weight: 0
+  field_callout_link:
+    label: hidden
+    region: content
+    settings: {rel: '', target: '', trim_length: 80, url_only: false, url_plain: false}
+    third_party_settings: {}
+    type: link
+    weight: 1
+dependencies:
+  config: [block_content.type.callout, field.field.block_content.callout.body,
+    field.field.block_content.callout.field_callout_link]
+  module: [link, text]
+hidden: {}
+id: block_content.callout.default
+langcode: en
+mode: default
+status: true
+targetEntityType: block_content

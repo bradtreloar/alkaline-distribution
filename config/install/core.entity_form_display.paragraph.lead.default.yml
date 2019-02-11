@@ -1,0 +1,24 @@
+bundle: lead
+content:
+  field_button_link:
+    region: content
+    settings: {placeholder_title: '', placeholder_url: ''}
+    third_party_settings: {}
+    type: link_default
+    weight: 3
+  field_text:
+    region: content
+    settings: {placeholder: '', rows: 3}
+    third_party_settings: {}
+    type: text_textarea
+    weight: 2
+dependencies:
+  config: [field.field.paragraph.lead.field_button_link, field.field.paragraph.lead.field_text,
+    paragraphs.paragraphs_type.lead]
+  module: [link, text]
+hidden: {created: true, status: true, uid: true}
+id: paragraph.lead.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

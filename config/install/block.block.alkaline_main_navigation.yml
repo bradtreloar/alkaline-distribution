@@ -1,23 +1,15 @@
-langcode: en
-status: true
 dependencies:
-  config:
-    - system.menu.main
-  module:
-    - system
-  theme:
-    - alkaline
+  config: [system.menu.main]
+  module: [system]
+  theme: [alkaline]
 id: alkaline_main_navigation
-theme: alkaline
-region: navbar_top
-weight: 0
+langcode: en
+plugin: system_menu_block:main
 provider: null
-plugin: 'system_menu_block:main'
-settings:
-  id: 'system_menu_block:main'
-  label: 'Main navigation'
-  provider: system
-  label_display: '0'
-  level: 1
-  depth: 0
-visibility: {  }
+region: header_left
+settings: {depth: 0, id: 'system_menu_block:main', label: Main navigation, label_display: '0',
+  level: 1, provider: system}
+status: false
+theme: alkaline
+visibility: {}
+weight: 0

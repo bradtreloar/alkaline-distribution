@@ -1,0 +1,17 @@
+bundle: lead
+default_value: {}
+default_value_callback: ''
+dependencies:
+  config: [field.storage.paragraph.field_button_link, paragraphs.paragraphs_type.lead]
+  module: [link]
+description: ''
+entity_type: paragraph
+field_name: field_button_link
+field_type: link
+id: paragraph.lead.field_button_link
+label: Links
+langcode: en
+required: false
+settings: {link_type: 17, title: 2}
+status: true
+translatable: false

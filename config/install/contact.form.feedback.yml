@@ -1,11 +1,10 @@
-langcode: en
-status: true
-dependencies: {  }
+dependencies: {}
 id: feedback
-label: 'Contact Us'
-recipients:
-  - admin@example.com
+label: Enquiry Form
+langcode: en
+message: Thank you for your enquiry. We'll respond as soon as possible.
+recipients: [brad@treloardigital.com.au]
+redirect: /contact
 reply: ''
+status: true
 weight: 0
-message: 'Your message has been sent.'
-redirect: ''

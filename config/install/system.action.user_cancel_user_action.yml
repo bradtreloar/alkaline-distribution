@@ -1,10 +1,9 @@
-langcode: en
-status: true
+configuration: {}
 dependencies:
-  module:
-    - user
+  module: [user]
 id: user_cancel_user_action
-label: 'Cancel the selected user account(s)'
-type: user
+label: Cancel the selected user account(s)
+langcode: en
 plugin: user_cancel_user_action
-configuration: {  }
+status: true
+type: user

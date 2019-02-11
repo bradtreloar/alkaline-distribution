@@ -1,0 +1,8 @@
+cache: true
+dependencies:
+  module: [paragraphs]
+id: paragraph.token
+label: Token
+langcode: en
+status: true
+targetEntityType: paragraph

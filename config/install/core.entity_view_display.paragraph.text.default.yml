@@ -1,23 +1,18 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - field.field.paragraph.text.field_text
-    - field.field.paragraph.text.field_emphasis
-    - paragraphs.paragraphs_type.text
-  module:
-    - text
-id: paragraph.text.default
-targetEntityType: paragraph
 bundle: text
-mode: default
 content:
   field_text:
-    weight: 0
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
-hidden:
-  field_emphasis: true
+    settings: {}
+    third_party_settings: {}
+    type: text_default
+    weight: 0
+dependencies:
+  config: [field.field.paragraph.text.field_text, paragraphs.paragraphs_type.text]
+  module: [text]
+hidden: {}
+id: paragraph.text.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

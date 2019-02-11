@@ -1,19 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  theme:
-    - seven
+  theme: [seven]
 id: seven_primary_local_tasks
-theme: seven
-region: header
-weight: 0
-provider: null
+langcode: en
 plugin: local_tasks_block
-settings:
-  id: local_tasks_block
-  label: 'Primary tabs'
-  provider: core
-  label_display: '0'
-  primary: true
-  secondary: false
-visibility: {  }
+provider: null
+region: header
+settings: {id: local_tasks_block, label: Primary tabs, label_display: '0', primary: true,
+  provider: core, secondary: false}
+status: true
+theme: seven
+visibility: {}
+weight: 0

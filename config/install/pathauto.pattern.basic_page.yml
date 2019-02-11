@@ -1,21 +1,18 @@
-langcode: en
-status: true
 dependencies:
-  module:
-    - node
+  module: [node]
 id: basic_page
-label: 'Basic page'
-type: 'canonical_entities:node'
+label: Basic page
+langcode: en
 pattern: '[node:title]'
+relationships: {}
 selection_criteria:
-  e58a25cf-7020-459c-9d71-c9199ad6ccc7:
+  4ec20d5f-83dc-4034-b45c-2ed5cce7c66f:
+    bundles: {page: page, service_page: service_page}
+    context_mapping: {node: node}
     id: node_type
-    bundles:
-      page: page
     negate: false
-    context_mapping:
-      node: node
-    uuid: e58a25cf-7020-459c-9d71-c9199ad6ccc7
+    uuid: 4ec20d5f-83dc-4034-b45c-2ed5cce7c66f
 selection_logic: and
+status: true
+type: canonical_entities:node
 weight: -5
-relationships: {  }

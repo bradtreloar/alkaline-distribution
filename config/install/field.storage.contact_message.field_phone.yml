@@ -1,0 +1,16 @@
+cardinality: 1
+custom_storage: false
+dependencies:
+  module: [contact]
+entity_type: contact_message
+field_name: field_phone
+id: contact_message.field_phone
+indexes: {}
+langcode: en
+locked: false
+module: core
+persist_with_no_fields: false
+settings: {case_sensitive: false, is_ascii: false, max_length: 20}
+status: true
+translatable: true
+type: string

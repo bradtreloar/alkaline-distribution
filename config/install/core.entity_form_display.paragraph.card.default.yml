@@ -1,0 +1,24 @@
+bundle: card
+content:
+  field_image:
+    region: content
+    settings: {preview_image_style: thumbnail, progress_indicator: throbber}
+    third_party_settings: {}
+    type: image_image
+    weight: 0
+  field_text:
+    region: content
+    settings: {placeholder: '', rows: 3}
+    third_party_settings: {}
+    type: text_textarea
+    weight: 1
+dependencies:
+  config: [field.field.paragraph.card.field_image, field.field.paragraph.card.field_text,
+    image.style.thumbnail, paragraphs.paragraphs_type.card]
+  module: [image, text]
+hidden: {created: true, status: true, uid: true}
+id: paragraph.card.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

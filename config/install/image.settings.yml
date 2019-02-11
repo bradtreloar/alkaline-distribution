@@ -1,3 +1,2 @@
-preview_image: core/modules/image/sample.png
-allow_insecure_derivatives: false
-suppress_itok_output: false
+{allow_insecure_derivatives: false, preview_image: core/modules/image/sample.png,
+  suppress_itok_output: false}

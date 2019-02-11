@@ -1,0 +1,25 @@
+dependencies:
+  config: [views.view.testimonials_on_frontpage]
+  module: [block_visibility_groups, system, views]
+  theme: [metcalf]
+id: views_block__testimonials_on_frontpage_block_1
+langcode: en
+plugin: views_block:testimonials_on_frontpage-block_1
+provider: null
+region: content
+settings: {id: 'views_block:testimonials_on_frontpage-block_1', items_per_page: none,
+  label: '', label_display: visible, provider: views, views_label: ''}
+status: true
+theme: metcalf
+visibility:
+  condition_group:
+    block_visibility_group: ''
+    context_mapping: {}
+    id: condition_group
+    negate: false
+  request_path:
+    context_mapping: {}
+    id: request_path
+    negate: false
+    pages: <front>
+weight: -7

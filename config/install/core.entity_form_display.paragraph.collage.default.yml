@@ -1,26 +1,24 @@
-langcode: en
-status: true
-dependencies:
-  config:
-    - field.field.paragraph.collage.field_collage_image
-    - image.style.thumbnail
-    - paragraphs.paragraphs_type.collage
-  module:
-    - svg_image
-id: paragraph.collage.default
-targetEntityType: paragraph
 bundle: collage
-mode: default
 content:
-  field_collage_image:
-    weight: 0
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
+  field_caption:
     region: content
-hidden:
-  created: true
-  status: true
-  uid: true
+    settings: {placeholder: '', size: 60}
+    third_party_settings: {}
+    type: string_textfield
+    weight: 0
+  field_collage_image:
+    region: content
+    settings: {preview_image_style: thumbnail, progress_indicator: throbber}
+    third_party_settings: {}
+    type: image_image
+    weight: 1
+dependencies:
+  config: [field.field.paragraph.collage.field_caption, field.field.paragraph.collage.field_collage_image,
+    image.style.thumbnail, paragraphs.paragraphs_type.collage]
+  module: [image]
+hidden: {created: true, status: true, uid: true}
+id: paragraph.collage.default
+langcode: en
+mode: default
+status: true
+targetEntityType: paragraph

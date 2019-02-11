@@ -1,0 +1,6 @@
+dependencies: {}
+id: node__service_page
+label: 'Content: Service page'
+langcode: en
+status: true
+tags: {image_src: '[node:field_hero_image:url]'}

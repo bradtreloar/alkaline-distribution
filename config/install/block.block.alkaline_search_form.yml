@@ -1,19 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  module:
-    - search
-  theme:
-    - alkaline
+  module: [search]
+  theme: [alkaline]
 id: alkaline_search_form
-theme: alkaline
-region: navbar_top
-weight: 0
-provider: null
+langcode: en
 plugin: search_form_block
-settings:
-  id: search_form_block
-  label: 'Search form'
-  provider: search
-  label_display: '0'
-visibility: {  }
+provider: null
+region: header_left
+settings: {id: search_form_block, label: Search form, label_display: '0', provider: search}
+status: false
+theme: alkaline
+visibility: {}
+weight: 0

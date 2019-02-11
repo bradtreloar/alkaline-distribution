@@ -1,17 +1,12 @@
-langcode: en
-status: true
 dependencies:
-  theme:
-    - bartik
+  theme: [bartik]
 id: bartik_page_title
-theme: bartik
-region: content
-weight: -50
-provider: null
+langcode: en
 plugin: page_title_block
-settings:
-  id: page_title_block
-  label: 'Page title'
-  provider: core
-  label_display: '0'
-visibility: {  }
+provider: null
+region: content
+settings: {id: page_title_block, label: Page title, label_display: '0', provider: core}
+status: true
+theme: bartik
+visibility: {}
+weight: -50

@@ -1,9 +1,8 @@
-langcode: en
-status: true
+cache: true
 dependencies:
-  module:
-    - menu_link_content
+  module: [menu_link_content]
 id: menu_link_content.token
 label: Token
+langcode: en
+status: true
 targetEntityType: menu_link_content
-cache: true

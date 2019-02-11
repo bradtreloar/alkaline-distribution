@@ -1,0 +1,16 @@
+cardinality: 1
+custom_storage: false
+dependencies:
+  module: [paragraphs]
+entity_type: paragraph
+field_name: field_caption
+id: paragraph.field_caption
+indexes: {}
+langcode: en
+locked: false
+module: core
+persist_with_no_fields: false
+settings: {case_sensitive: false, is_ascii: false, max_length: 255}
+status: true
+translatable: true
+type: string

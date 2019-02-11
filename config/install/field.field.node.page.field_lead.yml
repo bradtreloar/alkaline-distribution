@@ -1,0 +1,17 @@
+bundle: page
+default_value: {}
+default_value_callback: ''
+dependencies:
+  config: [field.storage.node.field_lead, node.type.page]
+  module: [text]
+description: ''
+entity_type: node
+field_name: field_lead
+field_type: text_long
+id: node.page.field_lead
+label: Lead Section
+langcode: en
+required: false
+settings: {}
+status: true
+translatable: false

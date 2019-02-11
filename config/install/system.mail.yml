@@ -1,2 +1,1 @@
-interface:
-  default: php_mail
+interface: {default: php_mail}

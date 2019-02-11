@@ -1,12 +1,11 @@
-langcode: en
-status: true
+configuration:
+  rankings: {}
 dependencies:
-  module:
-    - node
+  module: [node]
 id: node_search
 label: Content
+langcode: en
 path: node
-weight: -10
 plugin: node_search
-configuration:
-  rankings: {  }
+status: true
+weight: -10

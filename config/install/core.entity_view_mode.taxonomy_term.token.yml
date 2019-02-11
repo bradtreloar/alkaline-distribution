@@ -1,9 +1,8 @@
-langcode: en
-status: true
+cache: true
 dependencies:
-  module:
-    - taxonomy
+  module: [taxonomy]
 id: taxonomy_term.token
 label: Token
+langcode: en
+status: true
 targetEntityType: taxonomy_term
-cache: true

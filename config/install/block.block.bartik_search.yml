@@ -1,19 +1,13 @@
-langcode: en
-status: true
 dependencies:
-  module:
-    - search
-  theme:
-    - bartik
+  module: [search]
+  theme: [bartik]
 id: bartik_search
-theme: bartik
-region: sidebar_first
-weight: -1
-provider: null
+langcode: en
 plugin: search_form_block
-settings:
-  id: search_form_block
-  label: Search
-  provider: search
-  label_display: visible
-visibility: {  }
+provider: null
+region: sidebar_first
+settings: {id: search_form_block, label: Search, label_display: visible, provider: search}
+status: true
+theme: bartik
+visibility: {}
+weight: -1

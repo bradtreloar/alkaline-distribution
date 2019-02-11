@@ -1,0 +1,16 @@
+dependencies: {}
+id: editor
+is_admin: null
+label: Editor
+langcode: en
+permissions: [access content overview, access toolbar, change own username, create
+    page content, create person content, create portfolio_project content, create
+    service_page content, delete any page content, delete any person content, delete
+    any portfolio_project content, delete any service_page content, edit any page
+    content, edit any person content, edit any portfolio_project content, edit any
+    service_page content, revert page revisions, revert person revisions, revert portfolio_project
+    revisions, revert service_page revisions, view own unpublished content, view page
+    revisions, view person revisions, view portfolio_project revisions, view service_page
+    revisions, view the administration theme]
+status: true
+weight: -8

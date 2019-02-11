@@ -1,0 +1,20 @@
+dependencies:
+  content: ['block_content:basic:4a117d02-dd31-4575-a2c4-8420c47cfaf7']
+  module: [block_content, block_visibility_groups]
+  theme: [metcalf]
+id: copyright
+langcode: en
+plugin: block_content:4a117d02-dd31-4575-a2c4-8420c47cfaf7
+provider: null
+region: boilerplate
+settings: {id: 'block_content:4a117d02-dd31-4575-a2c4-8420c47cfaf7', info: '', label: Boilerplate,
+  label_display: '0', provider: block_content, status: true, view_mode: full}
+status: true
+theme: metcalf
+visibility:
+  condition_group:
+    block_visibility_group: ''
+    context_mapping: {}
+    id: condition_group
+    negate: false
+weight: 0
