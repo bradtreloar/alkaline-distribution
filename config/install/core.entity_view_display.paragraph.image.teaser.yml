@@ -9,7 +9,7 @@ content:
     weight: 0
 dependencies:
   config: [core.entity_view_mode.paragraph.teaser, field.field.paragraph.image.field_caption,
-    field.field.paragraph.image.field_image, image.style.large_thumbnail_240x240_,
+    field.field.paragraph.image.field_image, image.style.thumbnail_large,
     paragraphs.paragraphs_type.image]
   module: [image]
 hidden: {field_caption: true}
