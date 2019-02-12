@@ -1,8 +1,8 @@
 admin_compact_mode: false
 default_langcode: en
 langcode: en
-mail: noreply@metcalfgroupsa.com.au
-name: Metcalf Group (SA)
-page: {403: '', 404: '', front: /node/1}
-slogan: We build new homes, renovations and commercial projects.
+mail: noreply@alkaline.treloardigital.com.au
+name: Alkaline
+page: {403: '', 404: '', front: /node}
+slogan: 
 weight_select_max: 100
