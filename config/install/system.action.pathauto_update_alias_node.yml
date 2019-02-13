@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [pathauto]
-id: pathauto_update_alias_node
-label: Update URL alias
-langcode: en
-plugin: pathauto_update_alias
-status: true
-type: node

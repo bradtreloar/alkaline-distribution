@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [node]
-id: node_unpublish_action
-label: Unpublish content
-langcode: en
-plugin: entity:unpublish_action:node
-status: true
-type: node

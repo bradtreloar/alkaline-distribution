@@ -55,6 +55,7 @@ install:
   - paragraphs
   - pathauto
   - r4032login
+  - redirect
   - svg_image
   - token
   - token_filter

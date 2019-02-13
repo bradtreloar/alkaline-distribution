@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [user]
-id: user_cancel_user_action
-label: Cancel the selected user account(s)
-langcode: en
-plugin: user_cancel_user_action
-status: true
-type: user

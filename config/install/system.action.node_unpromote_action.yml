@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [node]
-id: node_unpromote_action
-label: Remove content from front page
-langcode: en
-plugin: node_unpromote_action
-status: true
-type: node

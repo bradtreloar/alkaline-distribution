@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [node]
-id: node_publish_action
-label: Publish content
-langcode: en
-plugin: entity:publish_action:node
-status: true
-type: node

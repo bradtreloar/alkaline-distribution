@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [node]
-id: node_delete_action
-label: Delete content
-langcode: en
-plugin: entity:delete_action:node
-status: true
-type: node

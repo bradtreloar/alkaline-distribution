@@ -1,9 +1,0 @@
-configuration: {}
-dependencies:
-  module: [node]
-id: node_make_sticky_action
-label: Make content sticky
-langcode: en
-plugin: node_make_sticky_action
-status: true
-type: node
