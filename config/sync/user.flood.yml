@@ -1,7 +1,0 @@
-ip_limit: 50
-ip_window: 3600
-uid_only: false
-user_limit: 5
-user_window: 21600
-_core:
-  default_config_hash: _bzE0Ux9Ac2M0C9m53NdCXbVqEyr2GTKy3pYaWTtzD0
