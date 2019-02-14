@@ -1,0 +1,9 @@
+configuration: {}
+dependencies:
+  module: [user]
+id: user_block_user_action
+label: Block the selected user(s)
+langcode: en
+plugin: user_block_user_action
+status: true
+type: user

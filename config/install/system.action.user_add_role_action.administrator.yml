@@ -1,0 +1,10 @@
+configuration: {rid: administrator}
+dependencies:
+  config: [user.role.administrator]
+  module: [user]
+id: user_add_role_action.administrator
+label: Add the Administrator role to the selected user(s)
+langcode: en
+plugin: user_add_role_action
+status: true
+type: user

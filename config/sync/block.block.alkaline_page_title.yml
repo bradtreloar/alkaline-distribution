@@ -1,0 +1,27 @@
+uuid: 4fad08b0-d6bd-4a80-b7ad-4d698fb625f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alkaline
+_core:
+  default_config_hash: RQBpvr_8WnqeJkZUZyXLoPhR4hXz3_IoLpZZ7gtzT8k
+id: alkaline_page_title
+theme: alkaline
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    context_mapping: {  }
+    negate: true
+    pages: '<front>'

@@ -1,6 +1,5 @@
 behavior_plugins: {}
-dependencies:
-  content: ['file:file:1f857a4b-b069-45de-8381-bcbe15aab429']
+dependencies: {}
 description: A collage of images.
 icon_uuid: 1f857a4b-b069-45de-8381-bcbe15aab429
 id: collage

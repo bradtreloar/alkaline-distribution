@@ -1,0 +1,44 @@
+uuid: 36f38442-f666-4650-9791-3062084168aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.callout
+    - field.field.block_content.callout.body
+    - field.field.block_content.callout.field_callout_link
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: 1YOubnH0YcID0BpvtPZrKFr2-t69o0F4MPt519bKM0Y
+id: block_content.callout.default
+targetEntityType: block_content
+bundle: callout
+mode: default
+content:
+  body:
+    region: content
+    settings:
+      placeholder: ''
+      rows: 9
+      summary_rows: 3
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    weight: 1
+  field_callout_link:
+    region: content
+    settings:
+      placeholder_title: ''
+      placeholder_url: ''
+    third_party_settings: {  }
+    type: link_default
+    weight: 2
+  info:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: string_textfield
+    weight: 0
+hidden: {  }

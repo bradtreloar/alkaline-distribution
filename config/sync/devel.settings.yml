@@ -1,0 +1,10 @@
+debug_mail_directory: 'temporary://devel-mails'
+debug_mail_file_format: '%to-%subject-%datetime.mail.txt'
+devel_dumper: default
+error_handlers:
+  1: 1
+page_alter: false
+raw_names: false
+rebuild_theme: false
+_core:
+  default_config_hash: Y0bbXqCbvrLbGnypNG92KhLHQT-CnMeYG_BaCrZCruo

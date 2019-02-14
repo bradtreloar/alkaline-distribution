@@ -1,6 +1,5 @@
 behavior_plugins: {}
-dependencies:
-  content: ['file:file:e59804be-faf0-43d3-a676-d8c9e5b908c0']
+dependencies: {}
 description: ''
 icon_uuid: e59804be-faf0-43d3-a676-d8c9e5b908c0
 id: media_object

@@ -1,0 +1,9 @@
+configuration: {}
+dependencies:
+  module: [comment]
+id: comment_save_action
+label: Save comment
+langcode: en
+plugin: entity:save_action:comment
+status: true
+type: comment

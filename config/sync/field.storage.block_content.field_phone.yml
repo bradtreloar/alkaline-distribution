@@ -1,0 +1,22 @@
+uuid: ae26be7c-e847-45c2-9bcf-91c01c523b0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+_core:
+  default_config_hash: YguNlH0eTFEmbdSsgvBbRId-ic6dOmiERtutNoWwwKw
+id: block_content.field_phone
+field_name: field_phone
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -5,9 +5,9 @@ id: alkaline_search_form
 langcode: en
 plugin: search_form_block
 provider: null
-region: header_left
+region: header_right
 settings: {id: search_form_block, label: Search form, label_display: '0', provider: search}
-status: false
+status: true
 theme: alkaline
 visibility: {}
-weight: 0
+weight: -2

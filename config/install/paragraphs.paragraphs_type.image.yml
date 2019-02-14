@@ -1,6 +1,5 @@
 behavior_plugins: {}
-dependencies:
-  content: ['file:file:5bec46d0-9f1b-481a-83e9-aca6ede67a72']
+dependencies: {}
 description: An image, wrapped in a figure and with a caption
 icon_uuid: 5bec46d0-9f1b-481a-83e9-aca6ede67a72
 id: image

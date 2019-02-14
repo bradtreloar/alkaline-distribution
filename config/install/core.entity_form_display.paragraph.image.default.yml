@@ -15,7 +15,7 @@ content:
 dependencies:
   config: [field.field.paragraph.image.field_caption, field.field.paragraph.image.field_image,
     image.style.thumbnail, paragraphs.paragraphs_type.image]
-  module: [image]
+  module: [svg_image]
 hidden: {created: true, status: true, uid: true}
 id: paragraph.image.default
 langcode: en

@@ -5,7 +5,7 @@ effects:
     id: image_scale
     uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
     weight: 0
-label: "Large (480x480)"
+label: Large (480x480)
 langcode: en
 name: large
 status: true

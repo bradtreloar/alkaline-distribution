@@ -1,0 +1,50 @@
+uuid: 5c35483c-3668-47a2-9444-11ac94d8264f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+    - field.field.block_content.contact.field_address
+    - field.field.block_content.contact.field_map
+    - field.field.block_content.contact.field_phone
+  module:
+    - address
+    - google_map_field
+    - text
+_core:
+  default_config_hash: rRJmSUXtFEJn5qrt0M80jH267J0aRHcZrnO70iIK4NY
+id: block_content.contact.default
+targetEntityType: block_content
+bundle: contact
+mode: default
+content:
+  field_address:
+    region: content
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    weight: 2
+  field_map:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
+    weight: 3
+  field_phone:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: text_textfield
+    weight: 1
+  info:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: string_textfield
+    weight: 0
+hidden: {  }

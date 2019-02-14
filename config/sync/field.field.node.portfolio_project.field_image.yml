@@ -1,0 +1,51 @@
+uuid: 1ffc5028-a89f-40b0-bcf5-47c0e00c1b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.portfolio_project
+    - paragraphs.paragraphs_type.image
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: nhzfwic09hP02qnr7OhwYle3cMm1kCVSy05uiSEsCjA
+id: node.portfolio_project.field_image
+field_name: field_image
+entity_type: node
+bundle: portfolio_project
+label: 'Primary Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image: image
+    target_bundles_drag_drop:
+      card:
+        enabled: false
+        weight: 8
+      cards:
+        enabled: false
+        weight: 9
+      collage:
+        enabled: false
+        weight: 10
+      image:
+        enabled: true
+        weight: 11
+      lead:
+        enabled: false
+        weight: 12
+      media_object:
+        enabled: false
+        weight: 13
+      text:
+        enabled: false
+        weight: 14
+field_type: entity_reference_revisions

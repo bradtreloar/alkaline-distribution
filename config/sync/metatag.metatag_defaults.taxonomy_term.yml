@@ -1,0 +1,12 @@
+uuid: 3a423aae-b7d0-4b87-850e-9d2787bc30f6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ENFo-zPlna4PSL6aM5ElJXZ4k7VR6vvJty0NZKxme2M
+id: taxonomy_term
+label: 'Taxonomy term'
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  title: '[term:name] | [site:name]'

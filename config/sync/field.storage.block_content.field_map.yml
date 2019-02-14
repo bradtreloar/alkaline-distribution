@@ -1,0 +1,21 @@
+uuid: 690519fa-279f-487a-8c2c-0900bd519a81
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - google_map_field
+_core:
+  default_config_hash: UdLDJXhg3okoOHkRNUI0sIs1Em6pOu7leCNZps-XhMI
+id: block_content.field_map
+field_name: field_map
+entity_type: block_content
+type: google_map_field
+settings: {  }
+module: google_map_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+configuration: {}
+dependencies:
+  module: [node]
+id: node_save_action
+label: Save content
+langcode: en
+plugin: entity:save_action:node
+status: true
+type: node

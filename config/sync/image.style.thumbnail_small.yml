@@ -1,0 +1,17 @@
+uuid: e3f46338-d543-4259-8e65-882d059977a1
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OvTS512u_plLZ4FJQcUuER4OJV6MrR09V2NmDS_b0e0
+name: thumbnail_small
+label: 'Small Thumbnail (120x120)'
+effects:
+  -
+    uuid: ''
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      anchor: center-center
+      height: 120
+      width: 120

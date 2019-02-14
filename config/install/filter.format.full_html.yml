@@ -62,7 +62,7 @@ filters:
   token_filter:
     id: token_filter
     provider: token_filter
-    settings: {}
+    settings: {replace_empty: false}
     status: true
     weight: -50
 format: full_html

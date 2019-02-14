@@ -1,0 +1,30 @@
+uuid: 49f11117-421b-4e1e-969d-212e113c3926
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page
+    - node.type.page
+    - node.type.portfolio_project
+_core:
+  default_config_hash: RBpSgmlqJNEXyGOID5Kd3EcqrtBn9HyaycW125ifnss
+id: node.portfolio_project.field_page
+field_name: field_page
+entity_type: node
+bundle: portfolio_project
+label: 'Attach to Page'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    auto_create: false
+    auto_create_bundle: page
+    sort:
+      field: _none
+    target_bundles:
+      page: page
+field_type: entity_reference

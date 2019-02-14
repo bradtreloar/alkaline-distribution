@@ -8,7 +8,7 @@ provider: null
 region: header_left
 settings: {id: system_branding_block, label: Site branding, label_display: '0', provider: system,
   use_site_logo: true, use_site_name: false, use_site_slogan: false}
-status: false
+status: true
 theme: alkaline
 visibility: {}
-weight: 0
+weight: -3

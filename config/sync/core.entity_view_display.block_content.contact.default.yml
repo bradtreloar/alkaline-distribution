@@ -1,0 +1,42 @@
+uuid: f62f6463-fb20-4521-ac2c-7c518071e93b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+    - field.field.block_content.contact.field_address
+    - field.field.block_content.contact.field_map
+    - field.field.block_content.contact.field_phone
+  module:
+    - address
+    - google_map_field
+    - text
+_core:
+  default_config_hash: 08X6ORXaK0DajRjSra6FvM0UaCneW0E-hsE87_on2Gc
+id: block_content.contact.default
+targetEntityType: block_content
+bundle: contact
+mode: default
+content:
+  field_address:
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    weight: 1
+  field_map:
+    label: hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
+    weight: 2
+  field_phone:
+    label: above
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    weight: 0
+hidden: {  }

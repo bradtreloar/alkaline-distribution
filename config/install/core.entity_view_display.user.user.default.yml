@@ -14,7 +14,7 @@ content:
     weight: 0
 dependencies:
   config: [field.field.user.user.user_picture, image.style.thumbnail]
-  module: [image, user]
+  module: [svg_image, user]
 hidden: {}
 id: user.user.default
 langcode: en

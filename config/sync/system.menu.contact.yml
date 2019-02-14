@@ -1,0 +1,10 @@
+uuid: e8f006c2-df4c-4d21-8b2e-8cd320c4fc91
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AxDuIL-HFpfmouV_bDvIYLq6br0JwzrgpTRg5A1DNFo
+id: contact
+label: Contact
+description: ''
+locked: false

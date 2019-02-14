@@ -69,7 +69,7 @@ content:
 dependencies:
   config: [field.field.node.page.field_background_image, field.field.node.page.field_body,
     field.field.node.page.field_lead, image.style.thumbnail, node.type.page]
-  module: [image, paragraphs, path, text]
+  module: [paragraphs, path, svg_image, text]
 hidden: {}
 id: node.page.default
 langcode: en

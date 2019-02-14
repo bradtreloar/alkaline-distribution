@@ -1,0 +1,51 @@
+uuid: 45e4be82-d13d-4f04-a409-cfa917e211c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_phone
+_core:
+  default_config_hash: IOIkbAJgCPz1AzDn3dwOKi_2ECBTGP1Ra_XuqbkwA18
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_phone:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: string_textfield
+    weight: 2
+  mail:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+  message:
+    region: content
+    settings:
+      placeholder: ''
+      rows: 12
+    third_party_settings: {  }
+    type: string_textarea
+    weight: 4
+  name:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+  subject:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: string_textfield
+    weight: 3
+hidden:
+  copy: true
+  preview: true

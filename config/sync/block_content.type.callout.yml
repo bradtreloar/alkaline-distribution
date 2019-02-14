@@ -1,0 +1,10 @@
+uuid: 0970cbb7-2a67-428a-aa15-a315e2bd5dd8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IMzWK7F80qJU2_mQskO3nr0AMgJ1M8Sc6JhAWyPi1Io
+id: callout
+label: Callout
+revision: 0
+description: ''

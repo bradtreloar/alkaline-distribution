@@ -1,0 +1,9 @@
+configuration: {}
+dependencies:
+  module: [comment]
+id: comment_unpublish_action
+label: Unpublish comment
+langcode: en
+plugin: entity:unpublish_action:comment
+status: true
+type: comment

@@ -1,0 +1,32 @@
+uuid: ee424c82-9e12-4894-9c57-bcfa1b4ff33a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - svg_image
+    - user
+_core:
+  default_config_hash: m0Pw0WMPZZg3sU99mHf-_EOZyw69_h3lBy4Emot9b4Q
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  member_for:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+  user_picture:
+    label: hidden
+    region: content
+    settings:
+      image_link: content
+      image_style: thumbnail
+    third_party_settings: {  }
+    type: image
+    weight: 0
+hidden: {  }

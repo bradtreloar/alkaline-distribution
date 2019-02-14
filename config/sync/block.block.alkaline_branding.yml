@@ -1,0 +1,25 @@
+uuid: 64050bd3-a339-4cc5-aeb7-03ffb718903f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alkaline
+_core:
+  default_config_hash: 0GIVZNGuOAH_hJCrz-eLLvGL7lXRWAFje8ApuCviivM
+id: alkaline_branding
+theme: alkaline
+region: header_left
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

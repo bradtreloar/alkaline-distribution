@@ -9,9 +9,9 @@ content:
     weight: 1
 dependencies:
   config: [core.entity_view_mode.node.teaser, field.field.node.page.field_background_image,
-    field.field.node.page.field_body, node.type.page]
+    field.field.node.page.field_body, field.field.node.page.field_lead, node.type.page]
   module: [entity_reference_revisions, user]
-hidden: {field_background_image: true, links: true}
+hidden: {field_background_image: true, field_lead: true, links: true}
 id: node.page.teaser
 langcode: en
 mode: teaser

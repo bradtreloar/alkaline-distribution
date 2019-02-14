@@ -39,7 +39,7 @@ content:
     weight: -1
 dependencies:
   config: [field.field.user.user.user_picture, image.style.thumbnail]
-  module: [image, path, user]
+  module: [path, svg_image, user]
 hidden: {}
 id: user.user.default
 langcode: en

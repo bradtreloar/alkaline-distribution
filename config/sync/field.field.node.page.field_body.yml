@@ -1,0 +1,56 @@
+uuid: abd151fd-8003-4342-84af-4a63190dacb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.page
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.lead
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: Sr6WaCaknyIYcm3-Mh6z4WgsJ5NIpfuS7SMOQwXPA7k
+id: node.page.field_body
+field_name: field_body
+entity_type: node
+bundle: page
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      card: card
+      lead: lead
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 9
+      card:
+        enabled: true
+        weight: 8
+      cards:
+        enabled: false
+        weight: 10
+      collage:
+        enabled: false
+        weight: -5
+      image:
+        enabled: false
+        weight: -6
+      lead:
+        enabled: true
+        weight: 9
+      media_object:
+        enabled: false
+        weight: 13
+      text:
+        enabled: false
+        weight: -7
+field_type: entity_reference_revisions

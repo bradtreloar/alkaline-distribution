@@ -1,0 +1,9 @@
+uuid: c3af4557-7a91-448a-bb13-2120a8943336
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kbmfo-5e4991g0j0tPMcSkk3AQ5l7fmA6y3vcdAUmQk
+name: hero_large
+label: 'Hero Large (no effects)'
+effects: {  }

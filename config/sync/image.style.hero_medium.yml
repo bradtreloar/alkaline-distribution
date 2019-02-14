@@ -1,0 +1,17 @@
+uuid: 46e80b8b-a3c5-4f6e-81b8-a0c463d2055e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EpE06CqFJzEjSCJGeoCF-tAzAWR1vGc6r0H_XNINGD4
+name: hero_medium
+label: 'Hero Medium (1080x900)'
+effects:
+  -
+    uuid: ''
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      anchor: center-center
+      height: 900
+      width: 1080

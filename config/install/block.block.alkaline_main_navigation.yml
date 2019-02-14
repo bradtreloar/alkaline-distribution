@@ -6,10 +6,10 @@ id: alkaline_main_navigation
 langcode: en
 plugin: system_menu_block:main
 provider: null
-region: header_left
+region: navbar_top
 settings: {depth: 0, id: 'system_menu_block:main', label: Main navigation, label_display: '0',
   level: 1, provider: system}
-status: false
+status: true
 theme: alkaline
 visibility: {}
-weight: 0
+weight: -2

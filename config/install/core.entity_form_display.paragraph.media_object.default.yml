@@ -15,7 +15,7 @@ content:
 dependencies:
   config: [field.field.paragraph.media_object.field_image, field.field.paragraph.media_object.field_text,
     image.style.thumbnail, paragraphs.paragraphs_type.media_object]
-  module: [image, text]
+  module: [svg_image, text]
 hidden: {created: true, status: true, uid: true}
 id: paragraph.media_object.default
 langcode: en

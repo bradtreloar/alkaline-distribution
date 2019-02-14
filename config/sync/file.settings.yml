@@ -1,0 +1,8 @@
+description:
+  length: 128
+  type: textfield
+icon:
+  directory: core/modules/file/icons
+make_unused_managed_files_temporary: false
+_core:
+  default_config_hash: r6uEKirEl1CfT50X4Fpm2AFNEDT8oOQm5JGFFWp_Uc8

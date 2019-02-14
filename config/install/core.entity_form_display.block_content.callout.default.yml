@@ -19,8 +19,7 @@ content:
     type: string_textfield
     weight: 0
 dependencies:
-  config: [block_content.type.callout, field.field.block_content.callout.body,
-    field.field.block_content.callout.field_callout_link]
+  config: [block_content.type.callout, field.field.block_content.callout.body, field.field.block_content.callout.field_callout_link]
   module: [link, text]
 hidden: {}
 id: block_content.callout.default

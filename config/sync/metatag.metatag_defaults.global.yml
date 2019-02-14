@@ -1,0 +1,26 @@
+uuid: 88b4e6aa-2b31-4923-949d-f6ddd6b73885
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7zsAtPjFSXLBN3P8kUmea27dQt6iK3vI2onKB9zK8Kg
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  dcterms_creator: '[site:name]'
+  dcterms_title: '[current-page:title]'
+  og_country_name: Australia
+  og_locale: en_AU
+  og_locality: Wayville
+  og_phone_number: '+61882740277'
+  og_postal_code: '5034'
+  og_region: 'South AUstralia'
+  og_site_name: '[site:name]'
+  og_street_address: 'Metcalf Group (SA) 28 Greenhill Road'
+  og_title: '[current-page:title]'
+  og_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'
+  twitter_cards_page_url: '[current-page:url]'
+  twitter_cards_title: '[current-page:title]'
+  twitter_cards_type: summary

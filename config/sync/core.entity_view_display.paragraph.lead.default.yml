@@ -1,0 +1,38 @@
+uuid: 80694983-63ea-4611-9ca2-05be6c8991c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lead.field_button_link
+    - field.field.paragraph.lead.field_text
+    - paragraphs.paragraphs_type.lead
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: UxQx-xRchBdpxU0Yx4bg0cTizZcFkqzg_pI15RLzw-o
+id: paragraph.lead.default
+targetEntityType: paragraph
+bundle: lead
+mode: default
+content:
+  field_button_link:
+    label: hidden
+    region: content
+    settings:
+      rel: ''
+      target: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link
+    weight: 1
+  field_text:
+    label: hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    weight: 0
+hidden: {  }

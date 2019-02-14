@@ -1,0 +1,14 @@
+uuid: 5c288d9e-75a1-4103-b55b-464d058fa7b2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OA9g5di3DCjPyPTyJowtxw4W8cKy_G2mENS9G21VtoY
+id: feedback
+label: 'Enquiry Form'
+recipients:
+  - brad@treloardigital.com.au
+reply: ''
+weight: 0
+message: 'Thank you for your enquiry. We''ll respond as soon as possible.'
+redirect: /contact

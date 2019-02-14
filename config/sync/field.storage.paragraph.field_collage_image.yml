@@ -1,0 +1,32 @@
+uuid: 38f9284b-bb9d-4ea6-a6ad-57264f5a5aac
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+_core:
+  default_config_hash: pYh3uZlO2NWbDAW6UAGEC_eKTZVkCI7oI7Qqf5IyOTQ
+id: paragraph.field_collage_image
+field_name: field_collage_image
+entity_type: paragraph
+type: image
+settings:
+  default_image:
+    alt: ''
+    height: null
+    title: ''
+    uuid: ''
+    width: null
+  display_default: false
+  display_field: false
+  target_type: file
+  uri_scheme: public
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,97 @@
+uuid: b1a28d3f-811d-48e9-bf4e-e96c314ad4f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - views_ui
+_core:
+  default_config_hash: 1UtY2gpHXSMtqyq4j-Es7zPa1Ogu4GcsHbkMhXCST6w
+id: views-ui
+label: 'View edit page'
+module: views_ui
+routes:
+  -
+    route_name: entity.view.edit_form
+  -
+    route_name: entity.view.edit_display_form
+tips:
+  views-main:
+    body: 'View or edit the configuration.'
+    id: views-main
+    label: 'Manage view settings'
+    plugin: text
+    weight: 1
+  views-ui-displays:
+    attributes:
+      data-id: views-display-top
+    body: 'A display is a way of outputting the results, e.g., as a page or a block. A view can contain multiple displays, which are listed here. The active display is highlighted.'
+    id: views-ui-displays
+    label: 'Displays in this view'
+    plugin: text
+    weight: 2
+  views-ui-fields:
+    attributes:
+      data-class: views-ui-display-tab-bucket.field
+    body: 'If this view uses fields, they are listed here. You can click on a field to configure it.'
+    id: views-ui-fields
+    label: Fields
+    plugin: text
+    weight: 5
+  views-ui-filter:
+    attributes:
+      data-class: views-ui-display-tab-bucket.filter
+    body: 'Add filters to limit the results in the output. E.g., to only show content that is <em>published</em>, you would add a filter for <em>Published</em> and select <em>Yes</em>.'
+    id: views-ui-filter
+    label: 'Filter your view'
+    plugin: text
+    weight: 6
+  views-ui-filter-operations:
+    attributes:
+      data-class: 'views-ui-display-tab-bucket.filter .dropbutton-widget'
+    body: 'Add, rearrange or remove filters.'
+    id: views-ui-filter-operations
+    label: 'Filter actions'
+    plugin: text
+    weight: 7
+  views-ui-format:
+    attributes:
+      data-class: views-ui-display-tab-bucket.format
+    body: 'Choose how to output results. E.g., choose <em>Content</em> to output each item completely, using your configured display settings. Or choose <em>Fields</em>, which allows you to output only specific fields for each result. Additional formats can be added by installing modules to <em>extend</em> Drupal''s base functionality.'
+    id: views-ui-format
+    label: 'Output format'
+    plugin: text
+    weight: 4
+  views-ui-preview:
+    attributes:
+      data-id: preview-submit
+    body: 'Show a preview of the view output.'
+    id: views-ui-preview
+    label: Preview
+    location: left
+    plugin: text
+    weight: 10
+  views-ui-sorts:
+    attributes:
+      data-class: views-ui-display-tab-bucket.sort
+    body: 'Control the order in which the results are output. Click on an active sort rule to configure it.'
+    id: views-ui-sorts
+    label: 'Sort Criteria'
+    plugin: text
+    weight: 8
+  views-ui-sorts-operations:
+    attributes:
+      data-class: 'views-ui-display-tab-bucket.sort .dropbutton-widget'
+    body: 'Add, rearrange or remove sorting rules.'
+    id: views-ui-sorts-operations
+    label: 'Sort actions'
+    plugin: text
+    weight: 9
+  views-ui-view-admin:
+    attributes:
+      data-id: views-display-extra-actions
+    body: 'Perform administrative tasks, including adding a description and creating a clone. Click the drop-down button to view the available options.'
+    id: views-ui-view-admin
+    label: 'View administration'
+    location: left
+    plugin: text
+    weight: 3

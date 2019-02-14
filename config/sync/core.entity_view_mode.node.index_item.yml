@@ -1,0 +1,12 @@
+uuid: df5ab42f-bfb3-4388-ad49-dee4bacf2af2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: nup6OuBJ2J_LGI-kzbmiAEIQ6ZnC7cCkCkTJGlj9lTA
+id: node.index_item
+label: 'Index Item'
+targetEntityType: node
+cache: true

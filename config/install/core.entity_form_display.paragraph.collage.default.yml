@@ -15,7 +15,7 @@ content:
 dependencies:
   config: [field.field.paragraph.collage.field_caption, field.field.paragraph.collage.field_collage_image,
     image.style.thumbnail, paragraphs.paragraphs_type.collage]
-  module: [image]
+  module: [svg_image]
 hidden: {created: true, status: true, uid: true}
 id: paragraph.collage.default
 langcode: en
