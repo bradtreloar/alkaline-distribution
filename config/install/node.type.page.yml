@@ -1,15 +1,19 @@
-dependencies:
-  module: [menu_ui]
-description: Used for home, about, and policy pages.
-display_submitted: false
-help: ''
 langcode: en
-name: Page
-new_revision: true
-preview_mode: 1
 status: true
+dependencies:
+  module:
+  - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: [footer, main, policies]
+    available_menus:
+    - footer
+    - main
+    - policies
     parent: 'main:'
+name: Page
 type: page
+description: Used for home, about, and policy pages.
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

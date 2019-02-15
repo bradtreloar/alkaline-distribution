@@ -1,79 +1,102 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.node.portfolio_project.field_body
+  - field.field.node.portfolio_project.field_image
+  - field.field.node.portfolio_project.field_page
+  - node.type.portfolio_project
+  module:
+  - paragraphs
+  - path
+id: node.portfolio_project.default
+targetEntityType: node
 bundle: portfolio_project
+mode: default
 content:
   created:
+    type: datetime_timestamp
+    weight: 5
     region: content
     settings: {}
     third_party_settings: {}
-    type: datetime_timestamp
-    weight: 5
   field_body:
-    region: content
-    settings: {add_mode: button, default_paragraph_type: _none, edit_mode: open, form_display_mode: default,
-      title: Body Section, title_plural: Body Sections}
+    weight: 3
+    settings:
+      title: Body Section
+      title_plural: Body Sections
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
     third_party_settings: {}
     type: entity_reference_paragraphs
-    weight: 3
-  field_image:
     region: content
-    settings: {add_mode: dropdown, default_paragraph_type: '', edit_mode: open, form_display_mode: default,
-      title: Paragraph, title_plural: Paragraphs}
-    third_party_settings: {}
+  field_image:
     type: entity_reference_paragraphs
     weight: 2
-  field_page:
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {}
     region: content
+  field_page:
+    weight: 1
     settings: {}
     third_party_settings: {}
     type: options_select
-    weight: 1
-  path:
     region: content
-    settings: {}
-    third_party_settings: {}
+  path:
     type: path
     weight: 8
-  promote:
-    region: content
-    settings: {display_label: true}
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 6
-  status:
-    region: content
-    settings: {display_label: true}
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 9
-  sticky:
-    region: content
-    settings: {display_label: true}
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 7
-  title:
-    region: content
-    settings: {placeholder: '', size: 60}
-    third_party_settings: {}
-    type: string_textfield
-    weight: 0
-  uid:
-    region: content
-    settings: {match_operator: CONTAINS, placeholder: '', size: 60}
-    third_party_settings: {}
-    type: entity_reference_autocomplete
-    weight: 4
-  url_redirects:
     region: content
     settings: {}
     third_party_settings: {}
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {}
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {}
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {}
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {}
+  url_redirects:
     weight: 10
-dependencies:
-  config: [field.field.node.portfolio_project.field_body, field.field.node.portfolio_project.field_image,
-    field.field.node.portfolio_project.field_page, node.type.portfolio_project]
-  module: [paragraphs, path]
+    region: content
+    settings: {}
+    third_party_settings: {}
 hidden: {}
-id: node.portfolio_project.default
-langcode: en
-mode: default
-status: true
-targetEntityType: node

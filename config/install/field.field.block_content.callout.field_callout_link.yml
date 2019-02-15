@@ -1,17 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.callout
+  - field.storage.block_content.field_callout_link
+  module:
+  - link
+id: block_content.callout.field_callout_link
+field_name: field_callout_link
+entity_type: block_content
 bundle: callout
+label: Links
+description: ''
+required: false
+translatable: false
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [block_content.type.callout, field.storage.block_content.field_callout_link]
-  module: [link]
-description: ''
-entity_type: block_content
-field_name: field_callout_link
+settings:
+  link_type: 17
+  title: 2
 field_type: link
-id: block_content.callout.field_callout_link
-label: Links
-langcode: en
-required: false
-settings: {link_type: 17, title: 2}
-status: true
-translatable: false

@@ -1,7 +1,7 @@
+langcode: en
+status: true
 dependencies: {}
-description: Links to Policies
 id: policies
 label: Policies
-langcode: en
+description: Links to Policies
 locked: false
-status: true

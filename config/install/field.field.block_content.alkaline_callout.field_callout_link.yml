@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.alkaline_callout
+  - field.storage.block_content.field_callout_link
+  module:
+  - link
+id: block_content.alkaline_callout.field_callout_link
+field_name: field_callout_link
+entity_type: block_content
+bundle: alkaline_callout
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

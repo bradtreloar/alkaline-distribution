@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.alkaline_callout
+  - field.field.block_content.alkaline_callout.body
+  - field.field.block_content.alkaline_callout.field_callout_link
+  module:
+  - link
+  - text
+id: block_content.alkaline_callout.default
+targetEntityType: block_content
+bundle: alkaline_callout
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {}
+  field_callout_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {}
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+hidden: {}

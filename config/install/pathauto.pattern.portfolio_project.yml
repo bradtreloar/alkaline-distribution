@@ -1,18 +1,21 @@
+langcode: en
+status: true
 dependencies:
-  module: [node]
+  module:
+  - node
 id: portfolio_project
 label: Portfolio Project
-langcode: en
+type: canonical_entities:node
 pattern: projects/[node:title]
-relationships: {}
 selection_criteria:
   635094bb-162b-4109-9731-d6d8e89f9865:
-    bundles: {portfolio_project: portfolio_project}
-    context_mapping: {node: node}
     id: node_type
+    bundles:
+      portfolio_project: portfolio_project
     negate: false
+    context_mapping:
+      node: node
     uuid: 635094bb-162b-4109-9731-d6d8e89f9865
 selection_logic: and
-status: true
-type: canonical_entities:node
 weight: -5
+relationships: {}

@@ -1,7 +1,7 @@
+langcode: en
+status: true
 dependencies: {}
-description: ''
 id: contact
 label: Contact
-langcode: en
+description: ''
 locked: false
-status: true

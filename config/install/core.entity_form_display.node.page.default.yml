@@ -1,78 +1,103 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.node.page.field_background_image
+  - field.field.node.page.field_body
+  - field.field.node.page.field_lead
+  - image.style.thumbnail
+  - node.type.page
+  module:
+  - image
+  - paragraphs
+  - path
+  - text
+id: node.page.default
+targetEntityType: node
 bundle: page
+mode: default
 content:
   created:
-    region: content
-    settings: {}
-    third_party_settings: {}
     type: datetime_timestamp
     weight: 5
-  field_background_image:
     region: content
-    settings: {preview_image_style: thumbnail, progress_indicator: throbber}
+    settings: {}
+    third_party_settings: {}
+  field_background_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {}
     type: image_image
-    weight: 1
-  field_body:
     region: content
-    settings: {add_mode: button, default_paragraph_type: _none, edit_mode: open, form_display_mode: default,
-      title: Paragraph, title_plural: Paragraphs}
-    third_party_settings: {}
+  field_body:
     type: entity_reference_paragraphs
     weight: 3
-  field_lead:
     region: content
-    settings: {placeholder: '', rows: 3}
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {}
+  field_lead:
+    weight: 2
+    settings:
+      rows: 3
+      placeholder: ''
     third_party_settings: {}
     type: text_textarea
-    weight: 2
-  path:
     region: content
-    settings: {}
-    third_party_settings: {}
+  path:
     type: path
     weight: 8
-  promote:
-    region: content
-    settings: {display_label: true}
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 6
-  status:
-    region: content
-    settings: {display_label: true}
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 9
-  sticky:
-    region: content
-    settings: {display_label: true}
-    third_party_settings: {}
-    type: boolean_checkbox
-    weight: 7
-  title:
-    region: content
-    settings: {placeholder: '', size: 60}
-    third_party_settings: {}
-    type: string_textfield
-    weight: 0
-  uid:
-    region: content
-    settings: {match_operator: CONTAINS, placeholder: '', size: 60}
-    third_party_settings: {}
-    type: entity_reference_autocomplete
-    weight: 4
-  url_redirects:
     region: content
     settings: {}
     third_party_settings: {}
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {}
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    region: content
+    third_party_settings: {}
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {}
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+  url_redirects:
     weight: 10
-dependencies:
-  config: [field.field.node.page.field_background_image, field.field.node.page.field_body,
-    field.field.node.page.field_lead, image.style.thumbnail, node.type.page]
-  module: [paragraphs, path, svg_image, text]
+    region: content
+    settings: {}
+    third_party_settings: {}
 hidden: {}
-id: node.page.default
-langcode: en
-mode: default
-status: true
-targetEntityType: node

@@ -1,7 +1,7 @@
+langcode: en
+status: true
 dependencies: {}
-description: Site information links
 id: footer
 label: About
-langcode: en
+description: Site information links
 locked: true
-status: true

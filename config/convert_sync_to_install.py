@@ -2,7 +2,7 @@
 
 import os
 import re
-import yaml
+from ruamel.yaml import YAML
 
 sync_dir = "sync"
 install_dir = "install"
@@ -10,8 +10,7 @@ install_dir = "install"
 ignore_filename_patterns = [
     "\.htaccess",
     "core\.extension\.yml",
-    "block\.block\.bartik_\.[.]+\.yml",
-    "block\.block\.seven_\.[.]+\.yml"
+    "block\.block\.(?!alkaline)[a-z]+[^\.]+.yml",
 ]
 
 if "install" not in os.listdir("."):
@@ -30,6 +29,7 @@ for filename in os.listdir(sync_dir):
         continue
 
     with open(os.path.join(sync_dir, filename), "r") as stream:
+        yaml = YAML()
         config = yaml.load(stream)
 
     if "_core" in config:

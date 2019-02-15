@@ -1,13 +1,19 @@
-dependencies:
-  module: [search]
-  theme: [alkaline]
-id: alkaline_search_form
 langcode: en
-plugin: search_form_block
-provider: null
-region: header_right
-settings: {id: search_form_block, label: Search form, label_display: '0', provider: search}
-status: true
+status: false
+dependencies:
+  module:
+  - search
+  theme:
+  - alkaline
+id: alkaline_search_form
 theme: alkaline
+region: header_left
+weight: 0
+provider:
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search form
+  provider: search
+  label_display: '0'
 visibility: {}
-weight: -2

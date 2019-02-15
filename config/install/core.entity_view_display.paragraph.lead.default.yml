@@ -1,26 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.lead.field_button_link
+  - field.field.paragraph.lead.field_text
+  - paragraphs.paragraphs_type.lead
+  module:
+  - link
+  - text
+id: paragraph.lead.default
+targetEntityType: paragraph
 bundle: lead
+mode: default
 content:
   field_button_link:
+    weight: 1
     label: hidden
-    region: content
-    settings: {rel: '', target: '', trim_length: 80, url_only: false, url_plain: false}
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {}
     type: link
-    weight: 1
-  field_text:
-    label: hidden
     region: content
+  field_text:
+    weight: 0
+    label: hidden
     settings: {}
     third_party_settings: {}
     type: text_default
-    weight: 0
-dependencies:
-  config: [field.field.paragraph.lead.field_button_link, field.field.paragraph.lead.field_text,
-    paragraphs.paragraphs_type.lead]
-  module: [link, text]
+    region: content
 hidden: {}
-id: paragraph.lead.default
-langcode: en
-mode: default
-status: true
-targetEntityType: paragraph

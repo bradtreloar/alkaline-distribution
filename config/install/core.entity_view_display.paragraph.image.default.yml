@@ -1,26 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.image.field_caption
+  - field.field.paragraph.image.field_image
+  - paragraphs.paragraphs_type.image
+  module:
+  - image
+id: paragraph.image.default
+targetEntityType: paragraph
 bundle: image
+mode: default
 content:
   field_caption:
+    weight: 1
     label: hidden
-    region: content
-    settings: {link_to_entity: false}
+    settings:
+      link_to_entity: false
     third_party_settings: {}
     type: string
-    weight: 1
-  field_image:
-    label: hidden
     region: content
-    settings: {image_link: '', image_style: ''}
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
     third_party_settings: {}
     type: image
-    weight: 0
-dependencies:
-  config: [field.field.paragraph.image.field_caption, field.field.paragraph.image.field_image,
-    paragraphs.paragraphs_type.image]
-  module: [svg_image]
+    region: content
 hidden: {}
-id: paragraph.image.default
-langcode: en
-mode: default
-status: true
-targetEntityType: paragraph

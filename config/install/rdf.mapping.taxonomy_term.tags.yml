@@ -1,14 +1,19 @@
-bundle: tags
-dependencies:
-  config: [taxonomy.vocabulary.tags]
-  module: [taxonomy]
-fieldMappings:
-  description:
-    properties: ['schema:description']
-  name:
-    properties: ['schema:name']
-id: taxonomy_term.tags
 langcode: en
 status: true
+dependencies:
+  config:
+  - taxonomy.vocabulary.tags
+  module:
+  - taxonomy
+id: taxonomy_term.tags
 targetEntityType: taxonomy_term
-types: ['schema:Thing']
+bundle: tags
+types:
+- schema:Thing
+fieldMappings:
+  name:
+    properties:
+    - schema:name
+  description:
+    properties:
+    - schema:description

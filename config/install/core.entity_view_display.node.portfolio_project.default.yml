@@ -1,26 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.node.portfolio_project.field_body
+  - field.field.node.portfolio_project.field_image
+  - field.field.node.portfolio_project.field_page
+  - node.type.portfolio_project
+  module:
+  - entity_reference_revisions
+  - user
+id: node.portfolio_project.default
+targetEntityType: node
 bundle: portfolio_project
+mode: default
 content:
   field_body:
+    weight: 1
     label: hidden
-    region: content
-    settings: {link: '', view_mode: default}
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {}
     type: entity_reference_revisions_entity_view
-    weight: 1
-  field_image:
-    label: hidden
     region: content
-    settings: {link: '', view_mode: default}
-    third_party_settings: {}
+  field_image:
     type: entity_reference_revisions_entity_view
     weight: 0
-dependencies:
-  config: [field.field.node.portfolio_project.field_body, field.field.node.portfolio_project.field_image,
-    field.field.node.portfolio_project.field_page, node.type.portfolio_project]
-  module: [entity_reference_revisions, user]
-hidden: {field_page: true, links: true}
-id: node.portfolio_project.default
-langcode: en
-mode: default
-status: true
-targetEntityType: node
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {}
+    region: content
+hidden:
+  field_page: true
+  links: true

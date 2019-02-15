@@ -1,18 +1,24 @@
-dependencies:
-  module: [system]
-  theme: [alkaline]
-id: alkaline_page_title
 langcode: en
-plugin: page_title_block
-provider: null
-region: content
-settings: {id: page_title_block, label: Page title, label_display: '0', provider: core}
 status: true
+dependencies:
+  module:
+  - system
+  theme:
+  - alkaline
+id: alkaline_page_title
 theme: alkaline
+region: content
+weight: -1
+provider:
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Page title
+  provider: core
+  label_display: '0'
 visibility:
   request_path:
-    context_mapping: {}
     id: request_path
-    negate: true
     pages: <front>
-weight: -1
+    negate: true
+    context_mapping: {}

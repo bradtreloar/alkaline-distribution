@@ -1,18 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.cards.field_card
+  - paragraphs.paragraphs_type.cards
+  module:
+  - paragraphs
+id: paragraph.cards.default
+targetEntityType: paragraph
 bundle: cards
+mode: default
 content:
   field_card:
-    region: content
-    settings: {add_mode: dropdown, default_paragraph_type: '', edit_mode: open, form_display_mode: default,
-      title: Paragraph, title_plural: Paragraphs}
-    third_party_settings: {}
     type: entity_reference_paragraphs
     weight: 0
-dependencies:
-  config: [field.field.paragraph.cards.field_card, paragraphs.paragraphs_type.cards]
-  module: [paragraphs]
-hidden: {created: true, status: true, uid: true}
-id: paragraph.cards.default
-langcode: en
-mode: default
-status: true
-targetEntityType: paragraph
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {}
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

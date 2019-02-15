@@ -1,18 +1,24 @@
-dependencies:
-  module: [system]
-  theme: [alkaline]
-id: alkaline_breadcrumbs
 langcode: en
-plugin: system_breadcrumb_block
-provider: null
-region: content
-settings: {id: system_breadcrumb_block, label: Breadcrumbs, label_display: '0', provider: system}
 status: true
+dependencies:
+  module:
+  - system
+  theme:
+  - alkaline
+id: alkaline_breadcrumbs
 theme: alkaline
+region: content
+weight: -100
+provider:
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
 visibility:
   request_path:
-    context_mapping: {}
     id: request_path
-    negate: true
     pages: <front>
-weight: -100
+    negate: true
+    context_mapping: {}

@@ -1,7 +1,7 @@
+langcode: en
+status: true
 dependencies: {}
-description: List of services
 id: services
 label: Services
-langcode: en
+description: List of services
 locked: false
-status: true

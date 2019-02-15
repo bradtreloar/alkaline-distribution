@@ -1,8 +1,8 @@
-behavior_plugins: {}
-dependencies: {}
-description: ''
-icon_uuid: null
-id: card
-label: Card
 langcode: en
 status: true
+dependencies: {}
+id: card
+label: Card
+icon_uuid:
+description: ''
+behavior_plugins: {}

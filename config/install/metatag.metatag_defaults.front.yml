@@ -1,7 +1,9 @@
+langcode: en
+status: true
 dependencies: {}
 id: front
 label: Front page
-langcode: en
-status: true
-tags: {canonical_url: '[site:url]', shortlink: '[site:url]', title: '[site:name] |
-    [site:slogan]'}
+tags:
+  shortlink: '[site:url]'
+  title: '[site:name] | [site:slogan]'
+  canonical_url: '[site:url]'

@@ -1,16 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - node.type.testimonial
+id: node.testimonial.title
+field_name: title
+entity_type: node
 bundle: testimonial
+label: From
+description: ''
+required: true
+translatable: true
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [node.type.testimonial]
-description: ''
-entity_type: node
-field_name: title
-field_type: string
-id: node.testimonial.title
-label: From
-langcode: en
-required: true
 settings: {}
-status: true
-translatable: true
+field_type: string

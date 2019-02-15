@@ -1,13 +1,19 @@
-dependencies:
-  module: [system]
-  theme: [alkaline]
-id: alkaline_content
 langcode: en
-plugin: system_main_block
-provider: null
-region: content
-settings: {id: system_main_block, label: Main page content, label_display: '0', provider: system}
 status: true
+dependencies:
+  module:
+  - system
+  theme:
+  - alkaline
+id: alkaline_content
 theme: alkaline
-visibility: {}
+region: content
 weight: 0
+provider:
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: Main page content
+  provider: system
+  label_display: '0'
+visibility: {}

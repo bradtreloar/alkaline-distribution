@@ -1,8 +1,11 @@
+name: Metcalf Group (SA)
+mail: noreply@metcalfgroupsa.com.au
+slogan: We build new homes, renovations and commercial projects.
+page:
+  403: ''
+  404: ''
+  front: /node/1
 admin_compact_mode: false
-default_langcode: en
-langcode: en
-mail: admin@example.com
-name: Drupal
-page: {403: '', 404: '', front: /node}
-slogan: null
 weight_select_max: 100
+langcode: en
+default_langcode: en

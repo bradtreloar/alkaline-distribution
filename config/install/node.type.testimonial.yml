@@ -1,15 +1,16 @@
-dependencies:
-  module: [menu_ui]
-description: Used for testimonials and letters of recommendation.
-display_submitted: false
-help: ''
 langcode: en
-name: Testimonial
-new_revision: true
-preview_mode: 0
 status: true
+dependencies:
+  module:
+  - menu_ui
 third_party_settings:
   menu_ui:
     available_menus: {}
     parent: ''
+name: Testimonial
 type: testimonial
+description: Used for testimonials and letters of recommendation.
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

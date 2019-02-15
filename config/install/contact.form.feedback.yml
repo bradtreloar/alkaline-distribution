@@ -1,10 +1,11 @@
+langcode: en
+status: true
 dependencies: {}
 id: feedback
 label: Enquiry Form
-langcode: en
-message: Thank you for your enquiry. We'll respond as soon as possible.
-recipients: [brad@treloardigital.com.au]
-redirect: /contact
+recipients:
+- brad@treloardigital.com.au
 reply: ''
-status: true
 weight: 0
+message: Thank you for your enquiry. We'll respond as soon as possible.
+redirect: /contact

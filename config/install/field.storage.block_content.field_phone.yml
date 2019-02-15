@@ -1,16 +1,19 @@
-cardinality: -1
-custom_storage: false
-dependencies:
-  module: [block_content, text]
-entity_type: block_content
-field_name: field_phone
-id: block_content.field_phone
-indexes: {}
 langcode: en
-locked: false
-module: text
-persist_with_no_fields: false
-settings: {max_length: 255}
 status: true
-translatable: true
+dependencies:
+  module:
+  - block_content
+  - text
+id: block_content.field_phone
+field_name: field_phone
+entity_type: block_content
 type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

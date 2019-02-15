@@ -1,15 +1,16 @@
-dependencies:
-  module: [menu_ui]
-description: Used to display a project in the portfolio.
-display_submitted: false
-help: ''
 langcode: en
-name: Portfolio Project
-new_revision: true
-preview_mode: 0
 status: true
+dependencies:
+  module:
+  - menu_ui
 third_party_settings:
   menu_ui:
     available_menus: {}
     parent: ''
+name: Portfolio Project
 type: portfolio_project
+description: Used to display a project in the portfolio.
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

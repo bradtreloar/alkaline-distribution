@@ -1,23 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.node.teaser
+  - field.field.node.testimonial.body
+  - node.type.testimonial
+  module:
+  - text
+  - user
+id: node.testimonial.teaser
+targetEntityType: node
 bundle: testimonial
+mode: teaser
 content:
   body:
     label: hidden
-    region: content
-    settings: {trim_length: 300}
-    third_party_settings: {}
     type: text_summary_or_trimmed
     weight: 0
+    settings:
+      trim_length: 300
+    third_party_settings: {}
+    region: content
   links:
+    weight: 1
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 1
-dependencies:
-  config: [core.entity_view_mode.node.teaser, field.field.node.testimonial.body, node.type.testimonial]
-  module: [text, user]
 hidden: {}
-id: node.testimonial.teaser
-langcode: en
-mode: teaser
-status: true
-targetEntityType: node

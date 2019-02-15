@@ -1,22 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_page
+  - node.type.page
+  - node.type.portfolio_project
+id: node.portfolio_project.field_page
+field_name: field_page
+entity_type: node
 bundle: portfolio_project
+label: Attach to Page
+description: ''
+required: false
+translatable: false
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [field.storage.node.field_page, node.type.page, node.type.portfolio_project]
-description: ''
-entity_type: node
-field_name: field_page
-field_type: entity_reference
-id: node.portfolio_project.field_page
-label: Attach to Page
-langcode: en
-required: true
 settings:
   handler: default:node
   handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: _none
     auto_create: false
     auto_create_bundle: page
-    sort: {field: _none}
-    target_bundles: {page: page}
-status: true
-translatable: false
+field_type: entity_reference

@@ -1,10 +1,11 @@
-configuration: {}
+langcode: en
+status: true
 dependencies:
-  module: [user]
+  module:
+  - user
 id: user_search
 label: Users
-langcode: en
 path: user
-plugin: user_search
-status: true
 weight: 0
+plugin: user_search
+configuration: {}

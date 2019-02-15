@@ -1,38 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - contact.form.feedback
+  - field.field.contact_message.feedback.field_phone
+id: contact_message.feedback.default
+targetEntityType: contact_message
 bundle: feedback
+mode: default
 content:
   field_phone:
-    region: content
-    settings: {placeholder: '', size: 60}
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {}
     type: string_textfield
-    weight: 2
+    region: content
   mail:
+    weight: 1
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 1
   message:
-    region: content
-    settings: {placeholder: '', rows: 12}
-    third_party_settings: {}
     type: string_textarea
     weight: 4
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {}
   name:
+    weight: 0
     region: content
     settings: {}
     third_party_settings: {}
-    weight: 0
   subject:
-    region: content
-    settings: {placeholder: '', size: 60}
-    third_party_settings: {}
     type: string_textfield
     weight: 3
-dependencies:
-  config: [contact.form.feedback, field.field.contact_message.feedback.field_phone]
-hidden: {copy: true, preview: true}
-id: contact_message.feedback.default
-langcode: en
-mode: default
-status: true
-targetEntityType: contact_message
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+hidden:
+  copy: true
+  preview: true

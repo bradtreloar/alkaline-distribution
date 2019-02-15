@@ -1,18 +1,21 @@
+langcode: en
+status: true
 dependencies:
-  module: [node]
+  module:
+  - node
 id: testimonial
 label: Testimonial
-langcode: en
+type: canonical_entities:node
 pattern: testimonials/[node:title]
-relationships: {}
 selection_criteria:
   9cacd49c-b3c7-4cc5-88bc-5dbde77d7e7c:
-    bundles: {testimonial: testimonial}
-    context_mapping: {node: node}
     id: node_type
+    bundles:
+      testimonial: testimonial
     negate: false
+    context_mapping:
+      node: node
     uuid: 9cacd49c-b3c7-4cc5-88bc-5dbde77d7e7c
 selection_logic: and
-status: true
-type: canonical_entities:node
 weight: -5
+relationships: {}

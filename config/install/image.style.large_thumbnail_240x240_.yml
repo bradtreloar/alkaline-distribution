@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {}
+name: large_thumbnail_240x240_
+label: Large Thumbnail (240x240)
+effects:
+  441674f2-4393-4d2f-b12b-ca3d23cf88a7:
+    uuid: 441674f2-4393-4d2f-b12b-ca3d23cf88a7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 240
+      anchor: center-center

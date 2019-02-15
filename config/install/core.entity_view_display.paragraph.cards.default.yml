@@ -1,18 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.cards.field_card
+  - paragraphs.paragraphs_type.cards
+  module:
+  - entity_reference_revisions
+id: paragraph.cards.default
+targetEntityType: paragraph
 bundle: cards
+mode: default
 content:
   field_card:
-    label: above
-    region: content
-    settings: {link: '', view_mode: default}
-    third_party_settings: {}
     type: entity_reference_revisions_entity_view
     weight: 0
-dependencies:
-  config: [field.field.paragraph.cards.field_card, paragraphs.paragraphs_type.cards]
-  module: [entity_reference_revisions]
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {}
+    region: content
 hidden: {}
-id: paragraph.cards.default
-langcode: en
-mode: default
-status: true
-targetEntityType: paragraph

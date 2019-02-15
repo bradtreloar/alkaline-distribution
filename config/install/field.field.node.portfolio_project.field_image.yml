@@ -1,29 +1,48 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_image
+  - node.type.portfolio_project
+  - paragraphs.paragraphs_type.image
+  module:
+  - entity_reference_revisions
+id: node.portfolio_project.field_image
+field_name: field_image
+entity_type: node
 bundle: portfolio_project
+label: Primary Image
+description: ''
+required: true
+translatable: false
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [field.storage.node.field_image, node.type.portfolio_project, paragraphs.paragraphs_type.image]
-  module: [entity_reference_revisions]
-description: ''
-entity_type: node
-field_name: field_image
-field_type: entity_reference_revisions
-id: node.portfolio_project.field_image
-label: Primary Image
-langcode: en
-required: true
 settings:
   handler: default:paragraph
   handler_settings:
     negate: 0
-    target_bundles: {image: image}
+    target_bundles:
+      image: image
     target_bundles_drag_drop:
-      card: {enabled: false, weight: 8}
-      cards: {enabled: false, weight: 9}
-      collage: {enabled: false, weight: 10}
-      image: {enabled: true, weight: 11}
-      lead: {enabled: false, weight: 12}
-      media_object: {enabled: false, weight: 13}
-      text: {enabled: false, weight: 14}
-status: true
-translatable: false
+      card:
+        weight: 8
+        enabled: false
+      cards:
+        weight: 9
+        enabled: false
+      collage:
+        weight: 10
+        enabled: false
+      image:
+        enabled: true
+        weight: 11
+      lead:
+        weight: 12
+        enabled: false
+      media_object:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

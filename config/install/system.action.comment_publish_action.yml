@@ -1,9 +1,10 @@
-configuration: {}
+langcode: en
+status: true
 dependencies:
-  module: [comment]
+  module:
+  - comment
 id: comment_publish_action
 label: Publish comment
-langcode: en
-plugin: entity:publish_action:comment
-status: true
 type: comment
+plugin: entity:publish_action:comment
+configuration: {}

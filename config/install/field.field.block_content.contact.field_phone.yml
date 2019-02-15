@@ -1,17 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.contact
+  - field.storage.block_content.field_phone
+  module:
+  - text
+id: block_content.contact.field_phone
+field_name: field_phone
+entity_type: block_content
 bundle: contact
+label: Phone
+description: ''
+required: false
+translatable: false
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [block_content.type.contact, field.storage.block_content.field_phone]
-  module: [text]
-description: ''
-entity_type: block_content
-field_name: field_phone
-field_type: text
-id: block_content.contact.field_phone
-label: Phone
-langcode: en
-required: false
 settings: {}
-status: true
-translatable: false
+field_type: text

@@ -1,19 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - core.entity_view_mode.paragraph.teaser
+  - field.field.paragraph.image.field_caption
+  - field.field.paragraph.image.field_image
+  - image.style.large_thumbnail_240x240_
+  - paragraphs.paragraphs_type.image
+  module:
+  - image
+id: paragraph.image.teaser
+targetEntityType: paragraph
 bundle: image
+mode: teaser
 content:
   field_image:
+    weight: 0
     label: hidden
-    region: content
-    settings: {image_link: '', image_style: large_thumbnail_240x240_}
+    settings:
+      image_style: large_thumbnail_240x240_
+      image_link: ''
     third_party_settings: {}
     type: image
-    weight: 0
-dependencies:
-  config: [core.entity_view_mode.paragraph.teaser, field.field.paragraph.image.field_caption,
-    field.field.paragraph.image.field_image, paragraphs.paragraphs_type.image]
-  module: [svg_image]
-hidden: {field_caption: true}
-id: paragraph.image.teaser
-langcode: en
-mode: teaser
-status: true
-targetEntityType: paragraph
+    region: content
+hidden:
+  field_caption: true

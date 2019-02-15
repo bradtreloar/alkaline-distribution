@@ -1,7 +1,7 @@
+langcode: en
+status: true
 dependencies: {}
-description: Links related to the active user account
 id: account
 label: User account menu
-langcode: en
+description: Links related to the active user account
 locked: true
-status: true

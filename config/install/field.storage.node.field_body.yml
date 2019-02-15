@@ -1,16 +1,20 @@
-cardinality: -1
-custom_storage: false
-dependencies:
-  module: [entity_reference_revisions, node, paragraphs]
-entity_type: node
-field_name: field_body
-id: node.field_body
-indexes: {}
 langcode: en
-locked: false
-module: entity_reference_revisions
-persist_with_no_fields: false
-settings: {target_type: paragraph}
 status: true
-translatable: true
+dependencies:
+  module:
+  - entity_reference_revisions
+  - node
+  - paragraphs
+id: node.field_body
+field_name: field_body
+entity_type: node
 type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

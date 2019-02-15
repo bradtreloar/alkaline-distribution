@@ -1,8 +1,10 @@
-behavior_plugins: {}
-dependencies: {}
-description: ''
-icon_uuid: 5f85e569-5ae3-418f-89ad-bb97a4aabb08
-id: cards
-label: Cards
 langcode: en
 status: true
+dependencies:
+  content:
+  - file:file:5f85e569-5ae3-418f-89ad-bb97a4aabb08
+id: cards
+label: Cards
+icon_uuid: 5f85e569-5ae3-418f-89ad-bb97a4aabb08
+description: ''
+behavior_plugins: {}

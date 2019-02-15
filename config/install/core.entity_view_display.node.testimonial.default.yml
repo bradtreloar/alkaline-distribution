@@ -1,18 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.node.testimonial.body
+  - node.type.testimonial
+  module:
+  - text
+  - user
+id: node.testimonial.default
+targetEntityType: node
 bundle: testimonial
+mode: default
 content:
   body:
     label: hidden
-    region: content
-    settings: {}
-    third_party_settings: {}
     type: text_default
     weight: 0
-dependencies:
-  config: [field.field.node.testimonial.body, node.type.testimonial]
-  module: [text, user]
-hidden: {links: true}
-id: node.testimonial.default
-langcode: en
-mode: default
-status: true
-targetEntityType: node
+    settings: {}
+    third_party_settings: {}
+    region: content
+hidden:
+  links: true

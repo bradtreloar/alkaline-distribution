@@ -1,17 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.callout
+  - field.storage.block_content.body
+  module:
+  - text
+id: block_content.callout.body
+field_name: body
+entity_type: block_content
 bundle: callout
+label: Body
+description: ''
+required: false
+translatable: true
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [block_content.type.callout, field.storage.block_content.body]
-  module: [text]
-description: ''
-entity_type: block_content
-field_name: body
+settings:
+  display_summary: false
 field_type: text_with_summary
-id: block_content.callout.body
-label: Body
-langcode: en
-required: false
-settings: {display_summary: false}
-status: true
-translatable: true

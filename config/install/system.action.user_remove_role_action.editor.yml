@@ -1,10 +1,13 @@
-configuration: {rid: editor}
+langcode: en
+status: true
 dependencies:
-  config: [user.role.editor]
-  module: [user]
+  config:
+  - user.role.editor
+  module:
+  - user
 id: user_remove_role_action.editor
 label: Remove the Editor role from the selected user(s)
-langcode: en
-plugin: user_remove_role_action
-status: true
 type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor

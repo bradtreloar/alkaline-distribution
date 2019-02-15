@@ -1,8 +1,10 @@
-behavior_plugins: {}
-dependencies: {}
-description: A collage of images.
-icon_uuid: 1f857a4b-b069-45de-8381-bcbe15aab429
-id: collage
-label: Collage
 langcode: en
 status: true
+dependencies:
+  content:
+  - file:file:1f857a4b-b069-45de-8381-bcbe15aab429
+id: collage
+label: Collage
+icon_uuid: 1f857a4b-b069-45de-8381-bcbe15aab429
+description: A collage of images.
+behavior_plugins: {}

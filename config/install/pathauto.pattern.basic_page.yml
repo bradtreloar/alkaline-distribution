@@ -1,18 +1,22 @@
+langcode: en
+status: true
 dependencies:
-  module: [node]
+  module:
+  - node
 id: basic_page
 label: Basic page
-langcode: en
+type: canonical_entities:node
 pattern: '[node:title]'
-relationships: {}
 selection_criteria:
   4ec20d5f-83dc-4034-b45c-2ed5cce7c66f:
-    bundles: {page: page, service_page: service_page}
-    context_mapping: {node: node}
     id: node_type
+    bundles:
+      page: page
+      service_page: service_page
     negate: false
+    context_mapping:
+      node: node
     uuid: 4ec20d5f-83dc-4034-b45c-2ed5cce7c66f
 selection_logic: and
-status: true
-type: canonical_entities:node
 weight: -5
+relationships: {}

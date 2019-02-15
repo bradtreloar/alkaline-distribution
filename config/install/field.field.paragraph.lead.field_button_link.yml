@@ -1,17 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.paragraph.field_button_link
+  - paragraphs.paragraphs_type.lead
+  module:
+  - link
+id: paragraph.lead.field_button_link
+field_name: field_button_link
+entity_type: paragraph
 bundle: lead
+label: Links
+description: ''
+required: false
+translatable: false
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [field.storage.paragraph.field_button_link, paragraphs.paragraphs_type.lead]
-  module: [link]
-description: ''
-entity_type: paragraph
-field_name: field_button_link
+settings:
+  link_type: 17
+  title: 2
 field_type: link
-id: paragraph.lead.field_button_link
-label: Links
-langcode: en
-required: false
-settings: {link_type: 17, title: 2}
-status: true
-translatable: false

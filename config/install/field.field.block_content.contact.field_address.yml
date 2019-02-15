@@ -1,30 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.contact
+  - field.storage.block_content.field_address
+  module:
+  - address
+id: block_content.contact.field_address
+field_name: field_address
+entity_type: block_content
 bundle: contact
+label: Address
+description: ''
+required: false
+translatable: false
 default_value: {}
 default_value_callback: ''
-dependencies:
-  config: [block_content.type.contact, field.storage.block_content.field_address]
-  module: [address]
-description: ''
-entity_type: block_content
-field_name: field_address
-field_type: address
-id: block_content.contact.field_address
-label: Address
-langcode: en
-required: false
 settings:
   available_countries: {}
   field_overrides:
-    additionalName: {override: hidden}
-    addressLine1: {override: optional}
-    addressLine2: {override: optional}
-    administrativeArea: {override: optional}
-    familyName: {override: hidden}
-    givenName: {override: hidden}
-    locality: {override: optional}
-    organization: {override: optional}
-    postalCode: {override: optional}
+    additionalName:
+      override: hidden
+    addressLine1:
+      override: optional
+    addressLine2:
+      override: optional
+    administrativeArea:
+      override: optional
+    familyName:
+      override: hidden
+    givenName:
+      override: hidden
+    locality:
+      override: optional
+    organization:
+      override: optional
+    postalCode:
+      override: optional
   fields: {}
   langcode_override: ''
-status: true
-translatable: false
+field_type: address

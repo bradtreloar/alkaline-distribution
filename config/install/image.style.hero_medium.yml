@@ -1,10 +1,13 @@
-dependencies: {}
-effects:
-- data: {anchor: center-center, height: 900, width: 1080}
-  id: image_scale_and_crop
-  uuid: ''
-  weight: 2
-label: Hero Medium (1080x900)
 langcode: en
-name: hero_medium
 status: true
+dependencies: {}
+name: hero_medium
+label: Hero Medium (1080x900)
+effects:
+- uuid: ''
+  id: image_scale_and_crop
+  weight: 2
+  data:
+    anchor: center-center
+    height: 900
+    width: 1080

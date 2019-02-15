@@ -1,48 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.user.user.user_picture
+  - image.style.thumbnail
+  module:
+  - image
+  - path
+  - user
+id: user.user.default
+targetEntityType: user
 bundle: user
+mode: default
 content:
   account:
-    region: content
-    settings: {}
-    third_party_settings: {}
     weight: -10
+    region: content
+    settings: {}
+    third_party_settings: {}
   contact:
-    region: content
-    settings: {}
-    third_party_settings: {}
     weight: 5
+    region: content
+    settings: {}
+    third_party_settings: {}
   google_analytics:
-    region: content
-    settings: {}
-    third_party_settings: {}
     weight: 3
+    settings: {}
+    third_party_settings: {}
+    region: content
   language:
-    region: content
-    settings: {}
-    third_party_settings: {}
     weight: 0
-  path:
     region: content
     settings: {}
     third_party_settings: {}
+  path:
     type: path
     weight: 30
-  timezone:
     region: content
     settings: {}
     third_party_settings: {}
+  timezone:
     weight: 6
-  user_picture:
     region: content
-    settings: {preview_image_style: thumbnail, progress_indicator: throbber}
+    settings: {}
     third_party_settings: {}
+  user_picture:
     type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {}
     weight: -1
-dependencies:
-  config: [field.field.user.user.user_picture, image.style.thumbnail]
-  module: [path, svg_image, user]
+    region: content
 hidden: {}
-id: user.user.default
-langcode: en
-mode: default
-status: true
-targetEntityType: user

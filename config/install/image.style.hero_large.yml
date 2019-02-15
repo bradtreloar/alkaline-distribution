@@ -1,6 +1,6 @@
-dependencies: {}
-effects: {}
-label: Hero Large (no effects)
 langcode: en
-name: hero_large
 status: true
+dependencies: {}
+name: hero_large
+label: Hero Large (no effects)
+effects: {}

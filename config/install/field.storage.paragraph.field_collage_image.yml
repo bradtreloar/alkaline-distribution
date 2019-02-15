@@ -1,21 +1,29 @@
-cardinality: -1
-custom_storage: false
-dependencies:
-  module: [file, image, paragraphs]
-entity_type: paragraph
-field_name: field_collage_image
-id: paragraph.field_collage_image
-indexes: {}
 langcode: en
-locked: false
-module: image
-persist_with_no_fields: false
-settings:
-  default_image: {alt: '', height: null, title: '', uuid: '', width: null}
-  display_default: false
-  display_field: false
-  target_type: file
-  uri_scheme: public
 status: true
-translatable: true
+dependencies:
+  module:
+  - file
+  - image
+  - paragraphs
+id: paragraph.field_collage_image
+field_name: field_collage_image
+entity_type: paragraph
 type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width:
+    height:
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

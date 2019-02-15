@@ -1,16 +1,18 @@
-cardinality: 1
-custom_storage: false
-dependencies:
-  module: [address, block_content]
-entity_type: block_content
-field_name: field_address
-id: block_content.field_address
-indexes: {}
 langcode: en
-locked: false
-module: address
-persist_with_no_fields: false
-settings: {}
 status: true
-translatable: true
+dependencies:
+  module:
+  - address
+  - block_content
+id: block_content.field_address
+field_name: field_address
+entity_type: block_content
 type: address
+settings: {}
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {}
+persist_with_no_fields: false
+custom_storage: false

@@ -1,24 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.card.field_image
+  - field.field.paragraph.card.field_text
+  - image.style.thumbnail
+  - paragraphs.paragraphs_type.card
+  module:
+  - image
+  - text
+id: paragraph.card.default
+targetEntityType: paragraph
 bundle: card
+mode: default
 content:
   field_image:
-    region: content
-    settings: {preview_image_style: thumbnail, progress_indicator: throbber}
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {}
     type: image_image
-    weight: 0
-  field_text:
     region: content
-    settings: {placeholder: '', rows: 3}
+  field_text:
+    weight: 1
+    settings:
+      rows: 3
+      placeholder: ''
     third_party_settings: {}
     type: text_textarea
-    weight: 1
-dependencies:
-  config: [field.field.paragraph.card.field_image, field.field.paragraph.card.field_text,
-    image.style.thumbnail, paragraphs.paragraphs_type.card]
-  module: [svg_image, text]
-hidden: {created: true, status: true, uid: true}
-id: paragraph.card.default
-langcode: en
-mode: default
-status: true
-targetEntityType: paragraph
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

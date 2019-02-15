@@ -1,9 +1,10 @@
-configuration: {}
+langcode: en
+status: true
 dependencies:
-  module: [comment]
+  module:
+  - comment
 id: comment_delete_action
 label: Delete comment
-langcode: en
-plugin: entity:delete_action:comment
-status: true
 type: comment
+plugin: entity:delete_action:comment
+configuration: {}

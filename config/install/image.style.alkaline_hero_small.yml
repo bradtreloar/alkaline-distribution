@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {}
+name: alkaline_hero_small
+label: Alkaline Hero Small (720x600)
+effects:
+- uuid: ''
+  id: image_scale_and_crop
+  weight: 2
+  data:
+    width: 720
+    height: 600
+    anchor: center-center

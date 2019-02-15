@@ -1,4 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.contact
+  - field.field.block_content.contact.field_address
+  - field.field.block_content.contact.field_map
+  - field.field.block_content.contact.field_phone
+  module:
+  - address
+  - google_map_field
+  - text
+id: block_content.contact.default
+targetEntityType: block_content
 bundle: contact
+mode: default
 content:
   field_address:
     label: above
@@ -21,13 +36,4 @@ content:
     third_party_settings: {}
     type: text_default
     weight: 0
-dependencies:
-  config: [block_content.type.contact, field.field.block_content.contact.field_address,
-    field.field.block_content.contact.field_map, field.field.block_content.contact.field_phone]
-  module: [address, google_map_field, text]
 hidden: {}
-id: block_content.contact.default
-langcode: en
-mode: default
-status: true
-targetEntityType: block_content

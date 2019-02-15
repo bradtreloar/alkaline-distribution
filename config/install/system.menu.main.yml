@@ -1,7 +1,7 @@
+langcode: en
+status: true
 dependencies: {}
-description: Site section links
 id: main
 label: Main navigation
-langcode: en
+description: Site section links
 locked: true
-status: true

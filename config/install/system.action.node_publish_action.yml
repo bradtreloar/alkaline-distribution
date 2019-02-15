@@ -1,9 +1,10 @@
-configuration: {}
+langcode: en
+status: true
 dependencies:
-  module: [node]
+  module:
+  - node
 id: node_publish_action
 label: Publish content
-langcode: en
-plugin: entity:publish_action:node
-status: true
 type: node
+plugin: entity:publish_action:node
+configuration: {}

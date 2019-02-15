@@ -1,8 +1,10 @@
-behavior_plugins: {}
-dependencies: {}
-description: Rich text.
-icon_uuid: fd0ef07c-15ce-4bb2-9b34-293ddbc8e7ab
-id: text
-label: Text
 langcode: en
 status: true
+dependencies:
+  content:
+  - file:file:fd0ef07c-15ce-4bb2-9b34-293ddbc8e7ab
+id: text
+label: Text
+icon_uuid: fd0ef07c-15ce-4bb2-9b34-293ddbc8e7ab
+description: Rich text.
+behavior_plugins: {}

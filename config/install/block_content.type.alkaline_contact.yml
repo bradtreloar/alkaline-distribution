@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {}
+id: alkaline_contact
+label: Contact
+revision: 0
+description: Displays location details

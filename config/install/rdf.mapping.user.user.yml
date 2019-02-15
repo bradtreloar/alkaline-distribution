@@ -1,11 +1,14 @@
-bundle: user
-dependencies:
-  module: [user]
-fieldMappings:
-  name:
-    properties: ['schema:name']
-id: user.user
 langcode: en
 status: true
+dependencies:
+  module:
+  - user
+id: user.user
 targetEntityType: user
-types: ['schema:Person']
+bundle: user
+types:
+- schema:Person
+fieldMappings:
+  name:
+    properties:
+    - schema:name

@@ -1,1 +1,5 @@
-{api_classname: Mailchimp\Mailchimp, api_key: '', batch_limit: 100, cron: false, test_mode: false}
+api_key: ''
+cron: false
+batch_limit: 100
+api_classname: Mailchimp\Mailchimp
+test_mode: false

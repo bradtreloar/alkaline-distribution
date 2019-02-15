@@ -1,9 +1,10 @@
-configuration: {}
+langcode: en
+status: true
 dependencies:
-  module: [comment]
+  module:
+  - comment
 id: comment_unpublish_action
 label: Unpublish comment
-langcode: en
-plugin: entity:unpublish_action:comment
-status: true
 type: comment
+plugin: entity:unpublish_action:comment
+configuration: {}
