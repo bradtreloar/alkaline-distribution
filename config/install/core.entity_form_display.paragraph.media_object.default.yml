@@ -7,7 +7,7 @@ dependencies:
   - image.style.thumbnail
   - paragraphs.paragraphs_type.media_object
   module:
-  - image
+  - svg_image
   - text
 id: paragraph.media_object.default
 targetEntityType: paragraph

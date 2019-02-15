@@ -1,5 +1,5 @@
 langcode: en
-status: false
+status: true
 dependencies:
   module:
   - system
@@ -8,7 +8,7 @@ dependencies:
 id: alkaline_branding
 theme: alkaline
 region: header_left
-weight: 0
+weight: -3
 provider:
 plugin: system_branding_block
 settings:

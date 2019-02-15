@@ -8,7 +8,7 @@ dependencies:
   - image.style.large_thumbnail_240x240_
   - paragraphs.paragraphs_type.image
   module:
-  - image
+  - svg_image
 id: paragraph.image.teaser
 targetEntityType: paragraph
 bundle: image

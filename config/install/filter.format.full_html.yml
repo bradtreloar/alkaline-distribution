@@ -75,4 +75,5 @@ filters:
     provider: token_filter
     status: true
     weight: -50
-    settings: {}
+    settings:
+      replace_empty: false

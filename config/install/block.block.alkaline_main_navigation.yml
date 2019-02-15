@@ -1,5 +1,5 @@
 langcode: en
-status: false
+status: true
 dependencies:
   config:
   - system.menu.main
@@ -9,8 +9,8 @@ dependencies:
   - alkaline
 id: alkaline_main_navigation
 theme: alkaline
-region: header_left
-weight: 0
+region: navbar_top
+weight: -2
 provider:
 plugin: system_menu_block:main
 settings:

@@ -6,7 +6,7 @@ dependencies:
   - field.field.paragraph.card.field_text
   - paragraphs.paragraphs_type.card
   module:
-  - image
+  - svg_image
   - text
 id: paragraph.card.default
 targetEntityType: paragraph

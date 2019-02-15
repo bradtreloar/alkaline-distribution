@@ -12,6 +12,7 @@ ignore_filename_patterns = [
     "core\.extension\.yml",
     "update\.settings\.yml",
     "block\.block\.(?!alkaline)[a-z]+[^\.]+.yml",
+    "README\.txt",
 ]
 
 if "install" not in os.listdir("."):

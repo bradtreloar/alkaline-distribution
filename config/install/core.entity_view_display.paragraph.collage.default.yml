@@ -6,7 +6,7 @@ dependencies:
   - field.field.paragraph.collage.field_collage_image
   - paragraphs.paragraphs_type.collage
   module:
-  - image
+  - svg_image
 id: paragraph.collage.default
 targetEntityType: paragraph
 bundle: collage

@@ -3,7 +3,9 @@ status: false
 dependencies:
   config:
   - core.entity_view_mode.node.lead
+  - field.field.node.page.field_background_image
   - field.field.node.page.field_body
+  - field.field.node.page.field_lead
   - node.type.page
   module:
   - entity_reference_revisions
@@ -23,4 +25,6 @@ content:
     third_party_settings: {}
     region: content
 hidden:
+  field_background_image: true
+  field_lead: true
   links: true

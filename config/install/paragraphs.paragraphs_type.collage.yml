@@ -1,8 +1,6 @@
 langcode: en
 status: true
-dependencies:
-  content:
-  - file:file:1f857a4b-b069-45de-8381-bcbe15aab429
+dependencies: {}
 id: collage
 label: Collage
 icon_uuid: 1f857a4b-b069-45de-8381-bcbe15aab429
