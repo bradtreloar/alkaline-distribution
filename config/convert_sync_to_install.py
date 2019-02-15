@@ -10,6 +10,7 @@ install_dir = "install"
 ignore_filename_patterns = [
     "\.htaccess",
     "core\.extension\.yml",
+    "update\.settings\.yml",
     "block\.block\.(?!alkaline)[a-z]+[^\.]+.yml",
 ]
 
