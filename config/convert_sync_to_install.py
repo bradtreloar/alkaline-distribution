@@ -11,7 +11,7 @@ ignore_filename_patterns = [
     "\.htaccess",
     "core\.extension\.yml",
     "update\.settings\.yml",
-    "block\.block\.(?!alkaline)[a-z]+[^\.]+.yml",
+    "block\.block\.(?!alkaline)(?!seven)[a-z]+[^\.]+.yml",
     "README\.txt",
 ]
 
