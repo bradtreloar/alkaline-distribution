@@ -61,6 +61,7 @@ install:
   - svg_image
   - token
   - token_filter
+  - button_link
 
 themes:
   - alkaline
