@@ -7,8 +7,8 @@ dependencies:
   - alkaline
 id: alkaline_breadcrumbs
 theme: alkaline
-region: content
-weight: -100
+region: lead
+weight: -2
 provider:
 plugin: system_breadcrumb_block
 settings:
