@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.call_to_action
+  - field.field.block_content.call_to_action.body
+  - field.field.block_content.call_to_action.field_link
+  module:
+  - link
+  - text
+id: block_content.call_to_action.default
+targetEntityType: block_content
+bundle: call_to_action
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 0
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {}
+    region: content
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {}
+    type: link_default
+    region: content
+hidden:
+  info: true
