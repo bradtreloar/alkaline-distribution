@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-  - block_content.type.alkaline_callout
+  - block_content.type.call_to_action
   - field.storage.block_content.body
   module:
   - text
-id: block_content.alkaline_callout.body
+id: block_content.call_to_action.body
 field_name: body
 entity_type: block_content
-bundle: alkaline_callout
+bundle: call_to_action
 label: Body
 description: ''
 required: false

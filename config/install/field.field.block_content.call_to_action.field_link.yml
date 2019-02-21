@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-  - block_content.type.alkaline_callout
-  - field.storage.block_content.field_callout_link
+  - block_content.type.call_to_action
+  - field.storage.block_content.field_link
   module:
   - link
-id: block_content.alkaline_callout.field_callout_link
-field_name: field_callout_link
+id: block_content.call_to_action.field_link
+field_name: field_link
 entity_type: block_content
-bundle: alkaline_callout
+bundle: call_to_action
 label: Links
 description: ''
 required: false

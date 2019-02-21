@@ -2,28 +2,26 @@ langcode: en
 status: true
 dependencies:
   config:
-  - block_content.type.alkaline_callout
-  - field.field.block_content.alkaline_callout.body
-  - field.field.block_content.alkaline_callout.field_callout_link
+  - block_content.type.call_to_action
+  - field.field.block_content.call_to_action.body
+  - field.field.block_content.call_to_action.field_link
   module:
-  - link
+  - button_link
   - text
-id: block_content.alkaline_callout.default
+id: block_content.call_to_action.default
 targetEntityType: block_content
-bundle: alkaline_callout
+bundle: call_to_action
 mode: default
 content:
   body:
+    label: hidden
     type: text_default
     weight: 0
-    region: content
-    label: hidden
     settings: {}
     third_party_settings: {}
-  field_callout_link:
-    type: link
-    weight: 1
     region: content
+  field_link:
+    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -32,4 +30,6 @@ content:
       rel: ''
       target: ''
     third_party_settings: {}
+    type: button_link
+    region: content
 hidden: {}
