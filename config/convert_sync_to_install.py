@@ -10,6 +10,8 @@ install_dir = "install"
 ignore_filename_patterns = [
     "\.htaccess",
     "core\.extension\.yml",
+    "google_analytics\.settings\.yml",
+    "google_map_field\.settings\.yml",
     "update\.settings\.yml",
     "block\.block\.(?!alkaline)(?!seven)[a-z]+[^\.]+.yml",
     "README\.txt",
