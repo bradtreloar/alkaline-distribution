@@ -8,7 +8,7 @@ dependencies:
 id: alkaline_content
 theme: alkaline
 region: content
-weight: 0
+weight: -2
 provider:
 plugin: system_main_block
 settings:
