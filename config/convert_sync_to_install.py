@@ -9,12 +9,25 @@ install_dir = "install"
 
 ignore_filename_patterns = [
     "\.htaccess",
-    "core\.extension\.yml",
-    "google_analytics\.settings\.yml",
-    "google_map_field\.settings\.yml",
-    "update\.settings\.yml",
-    "block\.block\.(?!alkaline)(?!seven)[a-z]+[^\.]+.yml",
     "README\.txt",
+
+    # Do not use core.extension config as this configuration is created during
+    # site installation.
+    "core\.extension\.yml",
+
+    # Do not use google_analytics.settings as this config contains secrets
+    "google_analytics\.settings\.yml",
+
+    # Do not use google_map_field.settings as this config contains secrets
+    "google_map_field\.settings\.yml",
+
+    # Ignore block configuration for any theme besides the alkaline base theme
+    # and the core themes, Bartik and Seven.
+    "block\.block\.(?!alkaline)(?!bartik)(?!seven)[a-z]+[^\.]+.yml",
+
+    # Do not use update.settings config as this configuration is created during
+    # site installation.
+    "update\.settings\.yml",
 ]
 
 if "install" not in os.listdir("."):
