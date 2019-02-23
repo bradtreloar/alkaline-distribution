@@ -62,6 +62,7 @@ install:
   - token
   - token_filter
   - button_link
+  - rules
 
 themes:
   - alkaline
