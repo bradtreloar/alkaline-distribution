@@ -1,10 +1,7 @@
 langcode: en
 status: true
 dependencies:
-  config:
-  - block_visibility_groups.block_visibility_group.show_page_title
   module:
-  - block_visibility_groups
   - system
   theme:
   - alkaline
@@ -19,14 +16,4 @@ settings:
   label: Page title
   provider: core
   label_display: '0'
-visibility:
-  request_path:
-    id: request_path
-    pages: <front>
-    negate: true
-    context_mapping: {}
-  condition_group:
-    id: condition_group
-    negate: false
-    block_visibility_group: show_page_title
-    context_mapping: {}
+visibility: {}
