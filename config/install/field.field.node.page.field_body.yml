@@ -5,7 +5,6 @@ dependencies:
   - field.storage.node.field_body
   - node.type.page
   - paragraphs.paragraphs_type.card
-  - paragraphs.paragraphs_type.lead
   module:
   - entity_reference_revisions
 id: node.page.field_body
@@ -24,7 +23,6 @@ settings:
     negate: 1
     target_bundles:
       card: card
-      lead: lead
     target_bundles_drag_drop:
       text:
         weight: -7
