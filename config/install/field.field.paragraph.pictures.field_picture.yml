@@ -2,17 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.storage.node.field_body
-  - node.type.page
-  - paragraphs.paragraphs_type.card
+  - field.storage.paragraph.field_picture
   - paragraphs.paragraphs_type.picture
+  - paragraphs.paragraphs_type.pictures
   module:
   - entity_reference_revisions
-id: node.page.field_body
-field_name: field_body
-entity_type: node
-bundle: page
-label: Body
+id: paragraph.pictures.field_picture
+field_name: field_picture
+entity_type: paragraph
+bundle: pictures
+label: Pictures
 description: ''
 required: false
 translatable: false
@@ -21,33 +20,35 @@ default_value_callback: ''
 settings:
   handler: default:paragraph
   handler_settings:
-    negate: 1
+    negate: 0
     target_bundles:
-      card: card
       picture: picture
     target_bundles_drag_drop:
-      text:
-        weight: -15
-        enabled: false
-      image:
-        weight: -14
+      pictures:
+        weight: 10
         enabled: false
       card:
-        enabled: true
-        weight: -13
+        weight: 11
+        enabled: false
       cards:
-        weight: -12
-        enabled: false
-      media_object:
-        weight: -11
-        enabled: false
-      gallery:
-        weight: -10
+        weight: 12
         enabled: false
       collage:
-        weight: -9
+        weight: 13
+        enabled: false
+      gallery:
+        weight: 14
+        enabled: false
+      image:
+        weight: 15
+        enabled: false
+      media_object:
+        weight: 16
         enabled: false
       picture:
         enabled: true
-        weight: 9
+        weight: 17
+      text:
+        weight: 18
+        enabled: false
 field_type: entity_reference_revisions

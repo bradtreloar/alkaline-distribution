@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.picture.field_caption
+  - field.field.paragraph.picture.field_image
+  - image.style.thumbnail
+  - paragraphs.paragraphs_type.picture
+  module:
+  - svg_image
+id: paragraph.picture.default
+targetEntityType: paragraph
+bundle: picture
+mode: default
+content:
+  field_caption:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {}
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

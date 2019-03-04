@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+id: picture
+label: Picture
+icon_uuid:
+description: ''
+behavior_plugins: {}

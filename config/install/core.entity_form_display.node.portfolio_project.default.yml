@@ -4,11 +4,12 @@ dependencies:
   config:
   - field.field.node.portfolio_project.field_body
   - field.field.node.portfolio_project.field_image
-  - field.field.node.portfolio_project.field_page
+  - field.field.node.portfolio_project.field_lead
   - node.type.portfolio_project
   module:
   - paragraphs
   - path
+  - text
 id: node.portfolio_project.default
 targetEntityType: node
 bundle: portfolio_project
@@ -44,11 +45,13 @@ content:
       default_paragraph_type: ''
     third_party_settings: {}
     region: content
-  field_page:
+  field_lead:
     weight: 1
-    settings: {}
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {}
-    type: options_select
+    type: text_textarea
     region: content
   path:
     type: path

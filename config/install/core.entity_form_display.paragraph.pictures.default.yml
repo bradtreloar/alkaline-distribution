@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.pictures.field_picture
+  - paragraphs.paragraphs_type.pictures
+  module:
+  - paragraphs
+id: paragraph.pictures.default
+targetEntityType: paragraph
+bundle: pictures
+mode: default
+content:
+  field_picture:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {}
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
