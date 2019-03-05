@@ -4,7 +4,7 @@ import os
 import re
 from ruamel.yaml import YAML
 
-sync_dir = "sync"
+sync_dir = "../../../../../config/sync"
 install_dir = "install"
 
 ignore_filename_patterns = [
