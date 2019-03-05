@@ -4,5 +4,5 @@ dependencies: {}
 id: card
 label: Card
 icon_uuid:
-description: ''
+description: A picture on top of some formatted text and links.
 behavior_plugins: {}

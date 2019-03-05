@@ -3,6 +3,6 @@ status: true
 dependencies: {}
 id: text
 label: Text
-icon_uuid: fd0ef07c-15ce-4bb2-9b34-293ddbc8e7ab
-description: Rich text.
+icon_uuid:
+description: A block of formatted text.
 behavior_plugins: {}

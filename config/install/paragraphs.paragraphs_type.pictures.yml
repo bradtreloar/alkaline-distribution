@@ -4,5 +4,5 @@ dependencies: {}
 id: pictures
 label: Pictures
 icon_uuid:
-description: ''
+description: A set of pictures with captions.
 behavior_plugins: {}

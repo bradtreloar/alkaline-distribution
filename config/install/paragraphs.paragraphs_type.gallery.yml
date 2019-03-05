@@ -4,5 +4,6 @@ dependencies: {}
 id: gallery
 label: Gallery
 icon_uuid:
-description: ''
+description: A gallery of pictures with captions, presented as thumbnails that can
+  be enlarged.
 behavior_plugins: {}

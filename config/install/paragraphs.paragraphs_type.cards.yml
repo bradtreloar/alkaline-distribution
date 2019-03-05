@@ -3,6 +3,6 @@ status: true
 dependencies: {}
 id: cards
 label: Cards
-icon_uuid: 5f85e569-5ae3-418f-89ad-bb97a4aabb08
-description: ''
+icon_uuid:
+description: A set of cards.
 behavior_plugins: {}
