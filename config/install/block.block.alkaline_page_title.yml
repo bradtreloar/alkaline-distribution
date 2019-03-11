@@ -6,7 +6,7 @@ dependencies:
 id: alkaline_page_title
 theme: alkaline
 region: content
-weight: -3
+weight: -2
 provider:
 plugin: page_title_block
 settings:
