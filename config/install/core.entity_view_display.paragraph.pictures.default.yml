@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+  - field.field.paragraph.pictures.field_is_gallery
   - field.field.paragraph.pictures.field_picture
   - paragraphs.paragraphs_type.pictures
   module:
@@ -20,4 +21,5 @@ content:
       link: ''
     third_party_settings: {}
     region: content
-hidden: {}
+hidden:
+  field_is_gallery: true

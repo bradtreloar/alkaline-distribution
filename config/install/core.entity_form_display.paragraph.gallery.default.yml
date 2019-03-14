@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.paragraph.gallery.field_gallery_image
+  - field.field.paragraph.gallery.field_picture
   - paragraphs.paragraphs_type.gallery
   module:
   - paragraphs
@@ -11,8 +11,7 @@ targetEntityType: paragraph
 bundle: gallery
 mode: default
 content:
-  field_gallery_image:
-    type: entity_reference_paragraphs
+  field_picture:
     weight: 0
     settings:
       title: Paragraph
@@ -22,6 +21,7 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {}
+    type: entity_reference_paragraphs
     region: content
 hidden:
   created: true

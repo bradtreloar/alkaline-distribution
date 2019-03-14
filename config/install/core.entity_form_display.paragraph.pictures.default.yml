@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+  - field.field.paragraph.pictures.field_is_gallery
   - field.field.paragraph.pictures.field_picture
   - paragraphs.paragraphs_type.pictures
   module:
@@ -11,9 +12,16 @@ targetEntityType: paragraph
 bundle: pictures
 mode: default
 content:
+  field_is_gallery:
+    weight: 0
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    region: content
   field_picture:
     type: entity_reference_paragraphs
-    weight: 0
+    weight: 1
     settings:
       title: Paragraph
       title_plural: Paragraphs
