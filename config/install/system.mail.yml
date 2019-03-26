@@ -1,2 +1,4 @@
 interface:
   default: php_mail
+  contact_page_mail: html_formatter_mail
+
