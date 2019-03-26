@@ -23,7 +23,7 @@ ignore_filename_patterns = [
 
     # Ignore block configuration for any theme besides the alkaline base theme
     # and the core themes, Bartik and Seven.
-    "block\.block\.(?!alkaline)(?!bartik)(?!seven)[a-z]+[^\.]+.yml",
+    "block\.block\.(?!bartik)(?!seven)[a-z]+[^\.]+.yml",
 
     # Do not use update.settings config as this configuration is created during
     # site installation.
