@@ -5,6 +5,7 @@ dependencies:
   - core.entity_view_mode.node.teaser
   - field.field.node.portfolio_project.field_body
   - field.field.node.portfolio_project.field_image
+  - field.field.node.portfolio_project.field_lead
   - node.type.portfolio_project
   module:
   - entity_reference_revisions
@@ -25,4 +26,5 @@ content:
     third_party_settings: {}
 hidden:
   field_body: true
+  field_lead: true
   links: true
