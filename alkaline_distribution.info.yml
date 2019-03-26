@@ -61,6 +61,8 @@ install:
   - token_filter
   - button_link
   - rules
+  - html_php_mail
+  - alkaline_mail
 
 themes:
   - alkaline
