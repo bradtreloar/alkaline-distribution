@@ -15,7 +15,7 @@
         "bradtreloar/alkaline-base": "^1.0",
         "bradtreloar/alkaline_mail": "^1.0",
         "bradtreloar/button_link": "^1.0",
-        "drupal/address": "^1.4",
+        "drupal/address": "^1.6",
         "drupal/admin_toolbar": "^1.24",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
