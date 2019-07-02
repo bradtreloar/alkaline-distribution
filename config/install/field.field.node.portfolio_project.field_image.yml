@@ -4,7 +4,7 @@ dependencies:
   config:
   - field.storage.node.field_image
   - node.type.portfolio_project
-  - paragraphs.paragraphs_type.image
+  - paragraphs.paragraphs_type.pictures
   module:
   - entity_reference_revisions
 id: node.portfolio_project.field_image
@@ -22,7 +22,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      image: image
+      pictures: pictures
     target_bundles_drag_drop:
       card:
         weight: 8
@@ -34,10 +34,10 @@ settings:
         weight: 10
         enabled: false
       image:
-        enabled: true
         weight: 11
-      lead:
-        weight: 12
+        enabled: false
+      gallery:
+        weight: 13
         enabled: false
       media_object:
         weight: 13
@@ -45,4 +45,10 @@ settings:
       text:
         weight: 14
         enabled: false
+      picture:
+        weight: 16
+        enabled: false
+      pictures:
+        enabled: true
+        weight: 17
 field_type: entity_reference_revisions
