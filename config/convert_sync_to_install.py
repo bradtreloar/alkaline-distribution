@@ -16,6 +16,10 @@ for filename in os.listdir(install_dir):
 
 # Copy the exported configuration to this profile
 for filename in os.listdir(sync_dir):
+    # Ignore non-config files.
+    if filename in [".htaccess", "README.txt"]:
+      continue
+
     # Load the config file.
     with open(os.path.join(sync_dir, filename), "r") as stream:
         yaml = YAML()

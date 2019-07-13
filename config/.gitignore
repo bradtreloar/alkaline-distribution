@@ -18,5 +18,3 @@ google_map_field.settings.yml
 # Do not use update.settings config as this configuration is created during
 # site installation.
 update.settings.yml
-
-README.txt
