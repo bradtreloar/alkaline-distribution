@@ -63,6 +63,8 @@ install:
   - rules
   - html_php_mail
   - alkaline_mail
+  - captcha
+  - recaptcha
 
 themes:
   - alkaline
