@@ -1,0 +1,4 @@
+
+block.block.*.yml
+!block.block.alkaline_*.yml
+!block.block.seven_*.yml
