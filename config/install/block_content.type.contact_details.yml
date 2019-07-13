@@ -1,7 +1,7 @@
 langcode: en
 status: true
 dependencies: {}
-id: contact
+id: contact_details
 label: Contact
 revision: 0
 description: Displays location details
