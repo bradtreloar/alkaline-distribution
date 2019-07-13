@@ -1,0 +1,57 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.paragraph.field_body
+  - paragraphs.paragraphs_type.aside
+  - paragraphs.paragraphs_type.card
+  - paragraphs.paragraphs_type.picture
+  module:
+  - entity_reference_revisions
+id: paragraph.aside.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: aside
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  handler: default:paragraph
+  handler_settings:
+    negate: 1
+    target_bundles:
+      aside: aside
+      card: card
+      picture: picture
+    target_bundles_drag_drop:
+      aside:
+        enabled: true
+        weight: 10
+      card:
+        enabled: true
+        weight: 11
+      cards:
+        weight: 12
+        enabled: false
+      collage:
+        weight: 13
+        enabled: false
+      gallery:
+        weight: 14
+        enabled: false
+      media_object:
+        weight: 15
+        enabled: false
+      picture:
+        enabled: true
+        weight: 16
+      pictures:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
