@@ -1,4 +1,22 @@
 
+# Ignore block configuration except those provided by the core themes
+# Bartik and Seven.
 block.block.*.yml
-!block.block.alkaline_*.yml
+!block.block.bartik_*.yml
 !block.block.seven_*.yml
+
+# Do not use core.extension config as this configuration is created during
+# site installation.
+core.extension.yml
+
+# Do not use google_analytics.settings as this config contains secrets
+google_analytics.settings.yml
+
+# Do not use google_map_field.settings as this config contains secrets
+google_map_field.settings.yml
+
+# Do not use update.settings config as this configuration is created during
+# site installation.
+update.settings.yml
+
+README.txt
