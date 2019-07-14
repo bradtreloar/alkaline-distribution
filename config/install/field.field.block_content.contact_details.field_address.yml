@@ -2,41 +2,41 @@ langcode: en
 status: true
 dependencies:
   config:
-  - block_content.type.contact
+  - block_content.type.contact_details
   - field.storage.block_content.field_address
   module:
   - address
-id: block_content.contact.field_address
+id: block_content.contact_details.field_address
 field_name: field_address
 entity_type: block_content
-bundle: contact
+bundle: contact_details
 label: Address
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {}
 default_value_callback: ''
 settings:
   available_countries: {}
+  langcode_override: ''
   field_overrides:
+    givenName:
+      override: hidden
     additionalName:
       override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: optional
     addressLine1:
       override: optional
     addressLine2:
       override: optional
-    administrativeArea:
-      override: optional
-    familyName:
-      override: hidden
-    givenName:
-      override: hidden
-    locality:
-      override: optional
-    organization:
-      override: optional
     postalCode:
       override: optional
+    locality:
+      override: optional
+    administrativeArea:
+      override: optional
   fields: {}
-  langcode_override: ''
 field_type: address

@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-  - block_content.type.contact
+  - block_content.type.contact_details
   - field.storage.block_content.field_phone
   module:
   - text
-id: block_content.contact.field_phone
+id: block_content.contact_details.field_phone
 field_name: field_phone
 entity_type: block_content
-bundle: contact
+bundle: contact_details
 label: Phone
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {}
 default_value_callback: ''
 settings: {}
