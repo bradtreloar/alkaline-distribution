@@ -3,19 +3,19 @@ status: true
 dependencies:
   module:
   - node
-id: basic_page
-label: Basic page
+id: blog_article
+label: Blog Article
 type: canonical_entities:node
-pattern: '[node:title]'
+pattern: blog/[node:title]
 selection_criteria:
-  8c2b1e98-c879-445e-93b1-2c539ba50012:
+  4c050bfd-1e6e-4744-8bac-39325c2313eb:
     id: node_type
     bundles:
-      page: page
+      article: article
     negate: false
     context_mapping:
       node: node
-    uuid: 8c2b1e98-c879-445e-93b1-2c539ba50012
+    uuid: 4c050bfd-1e6e-4744-8bac-39325c2313eb
 selection_logic: and
 weight: -5
 relationships: {}
