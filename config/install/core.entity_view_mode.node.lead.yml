@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-  - node
-id: node.lead
-label: Lead
-targetEntityType: node
-cache: true

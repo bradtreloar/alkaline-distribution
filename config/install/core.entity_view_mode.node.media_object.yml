@@ -3,7 +3,7 @@ status: true
 dependencies:
   module:
   - node
-id: node.index_item
-label: Index Item
+id: node.media_object
+label: Media Object
 targetEntityType: node
 cache: true
