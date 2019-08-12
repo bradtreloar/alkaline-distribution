@@ -4,8 +4,6 @@ dependencies:
   config:
   - field.storage.node.field_body
   - node.type.page
-  - paragraphs.paragraphs_type.card
-  - paragraphs.paragraphs_type.picture
   module:
   - entity_reference_revisions
 id: node.page.field_body
@@ -23,20 +21,12 @@ settings:
   handler_settings:
     negate: 1
     target_bundles:
-      card: card
-      picture: picture
     target_bundles_drag_drop:
       text:
         weight: -15
         enabled: false
-      image:
-        weight: -14
-        enabled: false
       card:
-        enabled: true
         weight: -13
-      cards:
-        weight: -12
         enabled: false
       media_object:
         weight: -11
@@ -44,10 +34,13 @@ settings:
       gallery:
         weight: -10
         enabled: false
-      collage:
-        weight: -9
+      aside:
+        weight: 8
         enabled: false
       picture:
-        enabled: true
         weight: 9
+        enabled: false
+      grid:
+        weight: 11
+        enabled: false
 field_type: entity_reference_revisions
