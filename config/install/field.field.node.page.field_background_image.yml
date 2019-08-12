@@ -11,7 +11,7 @@ field_name: field_background_image
 entity_type: node
 bundle: page
 label: Background Image
-description: ''
+description: 'This picture serves as a backdrop for the top of the page. '
 required: false
 translatable: false
 default_value: {}

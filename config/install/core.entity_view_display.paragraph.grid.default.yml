@@ -2,24 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.paragraph.pictures.field_is_gallery
-  - field.field.paragraph.pictures.field_picture
-  - paragraphs.paragraphs_type.pictures
+  - field.field.paragraph.grid.field_cell
+  - field.field.paragraph.grid.field_column_count
+  - paragraphs.paragraphs_type.grid
   module:
   - entity_reference_revisions
-id: paragraph.pictures.default
+id: paragraph.grid.default
 targetEntityType: paragraph
-bundle: pictures
+bundle: grid
 mode: default
 content:
-  field_picture:
+  field_cell:
     type: entity_reference_revisions_entity_view
     weight: 0
     label: hidden
     settings:
-      view_mode: default
+      view_mode: cell
       link: ''
     third_party_settings: {}
     region: content
 hidden:
-  field_is_gallery: true
+  field_column_count: true

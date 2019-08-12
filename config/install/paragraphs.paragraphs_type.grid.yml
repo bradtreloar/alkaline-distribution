@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+id: grid
+label: Grid
+icon_uuid:
+description: Display several paragraphs in a responsive grid.
+behavior_plugins: {}

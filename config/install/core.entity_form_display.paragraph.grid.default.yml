@@ -2,18 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.paragraph.cards.field_card
-  - paragraphs.paragraphs_type.cards
+  - field.field.paragraph.grid.field_cell
+  - field.field.paragraph.grid.field_column_count
+  - paragraphs.paragraphs_type.grid
   module:
   - paragraphs
-id: paragraph.cards.default
+id: paragraph.grid.default
 targetEntityType: paragraph
-bundle: cards
+bundle: grid
 mode: default
 content:
-  field_card:
+  field_cell:
     type: entity_reference_paragraphs
-    weight: 0
+    weight: 1
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -23,7 +24,12 @@ content:
       default_paragraph_type: ''
     third_party_settings: {}
     region: content
+  field_column_count:
+    weight: 0
+    settings: {}
+    third_party_settings: {}
+    type: options_select
+    region: content
 hidden:
   created: true
   status: true
-  uid: true

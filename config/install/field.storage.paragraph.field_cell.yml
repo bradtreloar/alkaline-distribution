@@ -4,8 +4,8 @@ dependencies:
   module:
   - entity_reference_revisions
   - paragraphs
-id: paragraph.field_card
-field_name: field_card
+id: paragraph.field_cell
+field_name: field_cell
 entity_type: paragraph
 type: entity_reference_revisions
 settings:

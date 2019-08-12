@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {}
-id: collage
-label: Collage
-icon_uuid:
-description: A collage of thumbnails.
-behavior_plugins: {}

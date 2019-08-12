@@ -8,7 +8,7 @@ dependencies:
   - image.style.thumbnail
   - node.type.page
   module:
-  - paragraphs
+  - alkaline_node
   - path
   - svg_image
   - text
@@ -32,12 +32,12 @@ content:
     type: image_image
     region: content
   field_body:
-    type: paragraphs
+    type: alkaline_paragraphs
     weight: 3
     region: content
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Section
+      title_plural: Sections
       edit_mode: open
       closed_mode: summary
       autocollapse: none
