@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.paragraph.gallery.field_picture
+  - field.field.paragraph.gallery.field_cell
   - paragraphs.paragraphs_type.gallery
   module:
   - entity_reference_revisions
@@ -11,11 +11,11 @@ targetEntityType: paragraph
 bundle: gallery
 mode: default
 content:
-  field_picture:
-    weight: 0
+  field_cell:
+    weight: 1
     label: hidden
     settings:
-      view_mode: thumbnail
+      view_mode: cell
       link: ''
     third_party_settings: {}
     type: entity_reference_revisions_entity_view

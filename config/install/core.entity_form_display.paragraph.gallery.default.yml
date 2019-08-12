@@ -2,26 +2,23 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.field.paragraph.gallery.field_picture
+  - field.field.paragraph.gallery.field_cell
   - paragraphs.paragraphs_type.gallery
   module:
-  - paragraphs
+  - entity_reference_revisions
 id: paragraph.gallery.default
 targetEntityType: paragraph
 bundle: gallery
 mode: default
 content:
-  field_picture:
-    weight: 0
+  field_cell:
+    weight: 1
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {}
-    type: entity_reference_paragraphs
+    type: entity_reference_revisions_autocomplete
     region: content
 hidden:
   created: true

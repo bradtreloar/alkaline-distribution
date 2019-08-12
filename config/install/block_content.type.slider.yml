@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {}
+id: slider
+label: Slider
+revision: 0
+description: Displays a slideshow of slides of various field types.

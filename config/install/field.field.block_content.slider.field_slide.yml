@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.slider
+  - field.storage.block_content.field_slide
+  module:
+  - entity_reference_revisions
+id: block_content.slider.field_slide
+field_name: field_slide
+entity_type: block_content
+bundle: slider
+label: Slides
+description: ''
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  handler: default:paragraph
+  handler_settings:
+    negate: 0
+    target_bundles:
+    target_bundles_drag_drop:
+      aside:
+        weight: 8
+        enabled: false
+      card:
+        weight: 9
+        enabled: false
+      gallery:
+        weight: 10
+        enabled: false
+      grid:
+        weight: 11
+        enabled: false
+      media_object:
+        weight: 12
+        enabled: false
+      picture:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

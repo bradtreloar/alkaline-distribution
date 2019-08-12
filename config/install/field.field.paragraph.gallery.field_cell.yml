@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-  - field.storage.paragraph.field_picture
+  - field.storage.paragraph.field_cell
   - paragraphs.paragraphs_type.gallery
   - paragraphs.paragraphs_type.picture
   module:
   - entity_reference_revisions
-id: paragraph.gallery.field_picture
-field_name: field_picture
+id: paragraph.gallery.field_cell
+field_name: field_cell
 entity_type: paragraph
 bundle: gallery
-label: Pictures
+label: Cells
 description: ''
 required: false
 translatable: true
@@ -24,31 +24,25 @@ settings:
     target_bundles:
       picture: picture
     target_bundles_drag_drop:
+      aside:
+        weight: 8
+        enabled: false
+      card:
+        weight: 9
+        enabled: false
       gallery:
         weight: 10
         enabled: false
-      card:
+      grid:
         weight: 11
         enabled: false
-      cards:
-        weight: 12
-        enabled: false
-      collage:
-        weight: 13
-        enabled: false
-      image:
-        weight: 14
-        enabled: false
       media_object:
-        weight: 15
+        weight: 12
         enabled: false
       picture:
         enabled: true
-        weight: 16
-      pictures:
-        weight: 17
-        enabled: false
+        weight: 13
       text:
-        weight: 18
+        weight: 14
         enabled: false
 field_type: entity_reference_revisions
