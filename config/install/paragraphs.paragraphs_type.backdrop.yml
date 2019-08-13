@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+id: backdrop
+label: Backdrop
+icon_uuid:
+description: Puts a background image behind other paragraphs.
+behavior_plugins: {}

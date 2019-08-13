@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.paragraph.field_body
+  - paragraphs.paragraphs_type.backdrop
+  module:
+  - entity_reference_revisions
+id: paragraph.backdrop.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: backdrop
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {}
+default_value_callback: ''
+settings:
+  handler: default:paragraph
+  handler_settings:
+    negate: 1
+    target_bundles:
+      backdrop: backdrop
+    target_bundles_drag_drop:
+      backdrop:
+        enabled: true
+        weight: 9
+      aside:
+        weight: 10
+        enabled: false
+      card:
+        weight: 11
+        enabled: false
+      gallery:
+        weight: 12
+        enabled: false
+      grid:
+        weight: 13
+        enabled: false
+      media_object:
+        weight: 14
+        enabled: false
+      picture:
+        weight: 15
+        enabled: false
+      text:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

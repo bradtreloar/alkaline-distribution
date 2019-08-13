@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.backdrop.field_body
+  - field.field.paragraph.backdrop.field_image
+  - field.field.paragraph.backdrop.field_reverse_color
+  - paragraphs.paragraphs_type.backdrop
+  module:
+  - entity_reference_revisions
+id: paragraph.backdrop.default
+targetEntityType: paragraph
+bundle: backdrop
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: body_section
+      link: ''
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  field_image: true
+  field_reverse_color: true

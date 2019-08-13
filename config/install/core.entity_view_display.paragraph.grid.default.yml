@@ -4,6 +4,7 @@ dependencies:
   config:
   - field.field.paragraph.grid.field_cell
   - field.field.paragraph.grid.field_column_count
+  - field.field.paragraph.grid.field_stretch_content
   - paragraphs.paragraphs_type.grid
   module:
   - entity_reference_revisions
@@ -23,3 +24,4 @@ content:
     region: content
 hidden:
   field_column_count: true
+  field_stretch_content: true

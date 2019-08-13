@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.paragraph.field_reverse_color
+  - paragraphs.paragraphs_type.backdrop
+id: paragraph.backdrop.field_reverse_color
+field_name: field_reverse_color
+entity_type: paragraph
+bundle: backdrop
+label: Reverse colour
+description: ''
+required: false
+translatable: false
+default_value:
+- value: 0
+default_value_callback: ''
+settings:
+  on_label: On
+  off_label: Off
+field_type: boolean

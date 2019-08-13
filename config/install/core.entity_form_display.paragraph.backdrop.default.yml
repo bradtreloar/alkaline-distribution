@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.backdrop.field_body
+  - field.field.paragraph.backdrop.field_image
+  - field.field.paragraph.backdrop.field_reverse_color
+  - image.style.thumbnail
+  - paragraphs.paragraphs_type.backdrop
+  module:
+  - paragraphs
+  - svg_image
+id: paragraph.backdrop.default
+targetEntityType: paragraph
+bundle: backdrop
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      title: Body Section
+      title_plural: Body Section
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {}
+    type: entity_reference_paragraphs
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {}
+    type: image_image
+    region: content
+  field_reverse_color:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

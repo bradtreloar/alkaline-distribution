@@ -4,6 +4,7 @@ dependencies:
   config:
   - field.field.paragraph.grid.field_cell
   - field.field.paragraph.grid.field_column_count
+  - field.field.paragraph.grid.field_stretch_content
   - paragraphs.paragraphs_type.grid
   module:
   - paragraphs
@@ -14,7 +15,7 @@ mode: default
 content:
   field_cell:
     type: entity_reference_paragraphs
-    weight: 1
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -29,6 +30,13 @@ content:
     settings: {}
     third_party_settings: {}
     type: options_select
+    region: content
+  field_stretch_content:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {}
+    type: boolean_checkbox
     region: content
 hidden:
   created: true

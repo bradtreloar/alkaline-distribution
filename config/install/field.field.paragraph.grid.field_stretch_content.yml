@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.paragraph.field_stretch_content
+  - paragraphs.paragraphs_type.grid
+id: paragraph.grid.field_stretch_content
+field_name: field_stretch_content
+entity_type: paragraph
+bundle: grid
+label: Stretch content to fill cells
+description: ''
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  on_label: On
+  off_label: Off
+field_type: boolean
