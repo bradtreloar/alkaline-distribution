@@ -7,8 +7,8 @@ from ruamel.yaml import YAML
 sync_dir = "../../../../config/sync"
 install_dir = "config/install"
 
-if "install" not in os.listdir("."):
-    os.mkdir("install")
+if "install" not in os.listdir("config"):
+    os.mkdir(install_dir)
 
 # Delete the existing configuration in this profile.
 for filename in os.listdir(install_dir):
