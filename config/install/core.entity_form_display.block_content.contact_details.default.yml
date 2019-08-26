@@ -4,11 +4,9 @@ dependencies:
   config:
   - block_content.type.contact_details
   - field.field.block_content.contact_details.field_address
-  - field.field.block_content.contact_details.field_map
   - field.field.block_content.contact_details.field_phone
   module:
   - address
-  - google_map_field
   - text
 id: block_content.contact_details.default
 targetEntityType: block_content
@@ -20,12 +18,6 @@ content:
     settings: {}
     third_party_settings: {}
     type: address_default
-    region: content
-  field_map:
-    weight: 27
-    settings: {}
-    third_party_settings: {}
-    type: google_map_field_default
     region: content
   field_phone:
     weight: 28
