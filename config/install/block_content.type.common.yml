@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {}
+id: common
+label: Common Block
+revision: 0
+description: "General purpose block that can be used for a variety of content.\t\r\
+  \n"

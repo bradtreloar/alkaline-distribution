@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.common
+  - field.field.block_content.common.field_body
+  module:
+  - entity_reference_revisions
+id: block_content.common.default
+targetEntityType: block_content
+bundle: common
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: above
+    settings:
+      view_mode: body_section
+      link: ''
+    third_party_settings: {}
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {}

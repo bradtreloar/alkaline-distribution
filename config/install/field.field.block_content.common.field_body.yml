@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - block_content.type.common
+  - field.storage.block_content.field_body
+  module:
+  - entity_reference_revisions
+id: block_content.common.field_body
+field_name: field_body
+entity_type: block_content
+bundle: common
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {}
+default_value_callback: ''
+settings:
+  handler: default:paragraph
+  handler_settings:
+    negate: 0
+    target_bundles:
+    target_bundles_drag_drop:
+      aside:
+        weight: 9
+        enabled: false
+      backdrop:
+        weight: 10
+        enabled: false
+      card:
+        weight: 11
+        enabled: false
+      gallery:
+        weight: 12
+        enabled: false
+      grid:
+        weight: 13
+        enabled: false
+      media_object:
+        weight: 14
+        enabled: false
+      picture:
+        weight: 15
+        enabled: false
+      text:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions
