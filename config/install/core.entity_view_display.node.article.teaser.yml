@@ -4,6 +4,7 @@ dependencies:
   config:
   - core.entity_view_mode.node.teaser
   - field.field.node.article.body
+  - field.field.node.article.field_gallery
   - field.field.node.article.field_image
   - node.type.article
   module:
@@ -37,4 +38,5 @@ content:
     region: content
     settings: {}
     third_party_settings: {}
-hidden: {}
+hidden:
+  field_gallery: true

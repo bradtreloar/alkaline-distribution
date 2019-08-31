@@ -22,15 +22,6 @@ content:
     settings: {}
     third_party_settings: {}
     region: content
-  field_gallery:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    label: hidden
-    settings:
-      view_mode: body_section
-      link: ''
-    third_party_settings: {}
-    region: content
   field_image:
     weight: 0
     label: hidden
@@ -41,4 +32,5 @@ content:
     type: entity_reference_revisions_entity_view
     region: content
 hidden:
+  field_gallery: true
   links: true
