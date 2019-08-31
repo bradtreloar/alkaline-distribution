@@ -5,7 +5,7 @@ dependencies:
   - core.entity_view_mode.paragraph.thumbnail
   - field.field.paragraph.picture.field_caption
   - field.field.paragraph.picture.field_image
-  - image.style.large
+  - image.style.thumbnail_large
   - paragraphs.paragraphs_type.picture
   module:
   - svg_image
@@ -26,7 +26,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: large
+      image_style: thumbnail_large
       image_link: file
       svg_render_as_image: '1'
       svg_attributes:

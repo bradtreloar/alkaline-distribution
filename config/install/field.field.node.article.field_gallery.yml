@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.node.field_gallery
+  - node.type.article
+  - paragraphs.paragraphs_type.gallery
+  module:
+  - entity_reference_revisions
+id: node.article.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: article
+label: Gallery
+description: ''
+required: false
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  handler: default:paragraph
+  handler_settings:
+    negate: 0
+    target_bundles:
+      gallery: gallery
+    target_bundles_drag_drop:
+      aside:
+        weight: 10
+        enabled: false
+      backdrop:
+        weight: 11
+        enabled: false
+      card:
+        weight: 12
+        enabled: false
+      gallery:
+        enabled: true
+        weight: 13
+      grid:
+        weight: 14
+        enabled: false
+      map:
+        weight: 15
+        enabled: false
+      media_object:
+        weight: 16
+        enabled: false
+      picture:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
