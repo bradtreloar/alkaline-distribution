@@ -1,7 +1,7 @@
 name: Alkaline
 type: profile
 description: "A general-purpose Drupal distribution."
-core: 8.6
+core: 8.x
 
 distribution:
   name: 'Alkaline'
