@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.storage.paragraph.field_video
+  - paragraphs.paragraphs_type.video
+  module:
+  - file
+id: paragraph.video.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: video
+label: Video
+description: ''
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp4
+  max_filesize: 128 MB
+  description_field: true
+  handler: default:file
+  handler_settings: {}
+field_type: file

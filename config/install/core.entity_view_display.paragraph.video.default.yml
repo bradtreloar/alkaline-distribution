@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - field.field.paragraph.video.field_video
+  - paragraphs.paragraphs_type.video
+  module:
+  - file
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      controls: true
+      multiple_file_display_type: tags
+      width: 1280
+      height: 720
+      autoplay: false
+      loop: false
+      muted: false
+    third_party_settings: {}
+    type: file_video
+    region: content
+hidden: {}
