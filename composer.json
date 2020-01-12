@@ -16,7 +16,7 @@
         "bradtreloar/alkaline_mail": "^1.0",
         "bradtreloar/button_link": "^1.0",
         "drupal/address": "^1.6",
-        "drupal/admin_toolbar": "^1.24",
+        "drupal/admin_toolbar": "^2.0",
         "drupal/console": "^1.0.2",
         "drupal/devel": ">=2.0",
         "drupal/google_analytics": "^3.0",
