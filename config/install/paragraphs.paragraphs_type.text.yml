@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:b3a8f7d1-97b6-4480-97da-14f9c6e7e2f0
 id: text
 label: Text
-icon_uuid:
-description: A block of formatted text.
+icon_uuid: b3a8f7d1-97b6-4480-97da-14f9c6e7e2f0
+description: A block of formatted text, including paragraphs, headings, links etc.
 behavior_plugins: {}

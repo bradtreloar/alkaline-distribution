@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:70ebec14-f43c-4547-a34a-6a2731a8393b
 id: video
 label: Video
-icon_uuid:
-description: Displays an HTML5 video element.
+icon_uuid: 70ebec14-f43c-4547-a34a-6a2731a8393b
+description: A video.
 behavior_plugins: {}

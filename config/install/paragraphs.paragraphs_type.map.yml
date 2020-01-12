@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:9d590d66-0863-4d12-b06d-c2e8adbcdddc
 id: map
 label: Map
-icon_uuid:
-description: ''
+icon_uuid: 9d590d66-0863-4d12-b06d-c2e8adbcdddc
+description: Display a Google map. You can only have one of these on a page.
 behavior_plugins: {}

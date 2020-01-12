@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:3990ab2f-0393-4060-83d6-98f1f813a47d
 id: backdrop
 label: Backdrop
-icon_uuid:
-description: Puts a background image behind other paragraphs.
+icon_uuid: 3990ab2f-0393-4060-83d6-98f1f813a47d
+description: Lets you put a background behind other elements.
 behavior_plugins: {}

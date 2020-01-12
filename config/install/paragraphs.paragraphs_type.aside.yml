@@ -1,9 +1,11 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:c5595acd-a0a2-4584-aa46-0efe8ac8fe9e
 id: aside
 label: Aside
-icon_uuid:
-description: Wraps paragraphs in a container, to visually separate them from the main
+icon_uuid: c5595acd-a0a2-4584-aa46-0efe8ac8fe9e
+description: Wraps elements in a container, to visually separate them from the main
   content.
 behavior_plugins: {}
