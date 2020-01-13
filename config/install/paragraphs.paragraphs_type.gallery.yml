@@ -1,8 +1,11 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:8959d875-eeb9-40e4-a17e-e36e394c02b9
 id: gallery
 label: Gallery
-icon_uuid:
-description: A set of pictures that are viewed as a lightbox gallery.
+icon_uuid: 8959d875-eeb9-40e4-a17e-e36e394c02b9
+description: A set of pictures displayed as a grid of thumbnails with captions. Clicking
+  a thumbnail opens a full-page slideshow of the pictures.
 behavior_plugins: {}

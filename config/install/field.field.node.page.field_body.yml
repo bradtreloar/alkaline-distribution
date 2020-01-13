@@ -23,24 +23,33 @@ settings:
     target_bundles:
     target_bundles_drag_drop:
       text:
-        weight: -15
-        enabled: false
-      card:
-        weight: -13
-        enabled: false
-      media_object:
-        weight: -11
-        enabled: false
-      gallery:
-        weight: -10
-        enabled: false
-      aside:
-        weight: 8
+        weight: -21
         enabled: false
       picture:
-        weight: 9
+        weight: -20
+        enabled: false
+      gallery:
+        weight: -19
+        enabled: false
+      card:
+        weight: -18
+        enabled: false
+      media_object:
+        weight: -17
         enabled: false
       grid:
-        weight: 11
+        weight: -16
+        enabled: false
+      backdrop:
+        weight: -15
+        enabled: false
+      aside:
+        weight: -14
+        enabled: false
+      map:
+        weight: -13
+        enabled: false
+      video:
+        weight: -12
         enabled: false
 field_type: entity_reference_revisions

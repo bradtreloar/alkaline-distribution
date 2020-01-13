@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:d1d1b7a4-8b8a-40ee-90ea-e9b97efdf524
 id: media_object
 label: Media Object
-icon_uuid:
-description: A picture alongside some formatted text and links.
+icon_uuid: d1d1b7a4-8b8a-40ee-90ea-e9b97efdf524
+description: A small picture alongside formatted text and links.
 behavior_plugins: {}

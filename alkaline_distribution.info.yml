@@ -65,6 +65,7 @@ install:
   - alkaline_mail
   - captcha
   - recaptcha
+  - alkaline_paragraphs
 
 themes:
   - alkaline

@@ -1,8 +1,11 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:457c0d9c-6921-45b3-bfc7-33f24dbe6bc4
 id: card
 label: Card
-icon_uuid:
-description: A picture on top of some formatted text and links.
+icon_uuid: 457c0d9c-6921-45b3-bfc7-33f24dbe6bc4
+description: A picture above some formatted text, with everything wrapped in a border
+  to make it a "card".
 behavior_plugins: {}

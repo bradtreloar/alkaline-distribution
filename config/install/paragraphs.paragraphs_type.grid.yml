@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:42fb7830-b885-49ac-a4bd-0082bdb90bf2
 id: grid
 label: Grid
-icon_uuid:
-description: Display several paragraphs in a responsive grid.
+icon_uuid: 42fb7830-b885-49ac-a4bd-0082bdb90bf2
+description: Lets you put several elements next to each other in rows.
 behavior_plugins: {}

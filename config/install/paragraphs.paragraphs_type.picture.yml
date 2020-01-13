@@ -1,8 +1,10 @@
 langcode: en
 status: true
-dependencies: {}
+dependencies:
+  content:
+  - file:file:c5441e12-4ec3-43ac-926a-f03b9ae4695c
 id: picture
 label: Picture
-icon_uuid:
-description: A picture with a caption.
+icon_uuid: c5441e12-4ec3-43ac-926a-f03b9ae4695c
+description: A picture with an (optional) caption displayed underneath.
 behavior_plugins: {}
